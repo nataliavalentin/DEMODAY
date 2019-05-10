@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'aside article'
+        'aside article'
+        'section section'
+        'footer footer';
+    grid-template-rows:  100vh 20vh 20vh 40vh 30vh;
+    grid-template-columns: 49vw 49.5vw;
+}
+
+header {
+    grid-area: header;
+    background-image: url("/static/images/header.jpeg");
+    background-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menuFixo {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+}
+
+.botaoFixo {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: #f26e57;
+    border: white solid 2px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;    
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header div nav article {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(226, 43, 156);
+}
+
+article{
+    grid-area: article;
+    background-color: rgb(89, 4, 146);
+}
+
+section {
+    grid-area: section;
+    background-color: rgb(0, 255, 0);
+}   
+
+footer{
+    grid-area: footer;
+    background-color: rgb(255, 217, 0);
+}
+
+@media(max-width:768px){
+    body{
+        grid-template-areas: 
+        'header header'
+        'aside aside'
+        'article article'
+        'section section'
+        'footer footer';
+        grid-template-rows: 30vh 20vh 10vh 40vh 20vh;    
+        grid-template-columns: 49vw 49vw;   
+    }
+}
+
+@media(max-width:425px){
+    body{
+        grid-template-areas: 
+        'header header'
+        'aside aside'
+        'article article'
+        'section section'
+        'footer footer';
+        grid-template-rows: 30vh 10vh 10vh 30vh 20vh;    
+        grid-template-columns: 49vw 49vw;   
+    }
+}

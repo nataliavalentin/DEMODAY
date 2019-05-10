@@ -5,13 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'index.css' %}">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script defer src="{% static 'js/script.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Bora!</title>
 </head>
 <body>
     <header>
-        Spinula
-        <nav></nav>
+        <div>
+            <a href=#>
+                BORA!
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Como Funciona
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Inscrever-se
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <article id="login">
+                            <a href="#">Entrar</a>
+                        </article>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+                <h1>BORA PRA ONDE HOJE?</h1>
+            </main>
     </header>
     {% block content %}
         
