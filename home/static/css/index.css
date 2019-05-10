@@ -1,4 +1,8 @@
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
     display: grid;
     grid-template-areas: 
@@ -8,7 +12,7 @@ body{
         'section section'
         'footer footer';
     grid-template-rows:  100vh 20vh 20vh 40vh 30vh;
-    grid-template-columns: 49vw 49.5vw;
+    grid-template-columns: 49vw 49.79vw;
 }
 
 header {
@@ -16,11 +20,6 @@ header {
     background-image: url("/static/images/header.jpeg");
     background-size: 100%;
     font-family: 'Raleway', sans-serif;
-}
-
-header a {
-    text-decoration: none;
-    color: white;
 }
 
 header div {
@@ -32,7 +31,7 @@ header div {
 .menuFixo {
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 60px;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
 }
 
@@ -61,13 +60,60 @@ header a {
     color: white;
 }
 
+header a:hover {
+    font-size: 20px;
+}
+
 header div nav article {
     padding: 10px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 18px;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
     color: white;
 }
+
+header main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 315px 0;
+}
+
+header main h1 {
+    font-size: 48pt;
+    color: white;
+    letter-spacing: -3px;
+    margin: 5px;
+}
+
+header main input {
+    background-color: #ffffff42;
+    border: #ee3f60 solid 2px;
+    border-radius: 20px;    
+    width: 35%;
+    color: white;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+header main input::-webkit-input-placeholder {
+    color: white;
+ }
+  
+ header main input:-moz-placeholder { /* Firefox 18- */
+    color: red;  
+ }
+  
+ header main input::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+ }
+  
+ header main input:-ms-input-placeholder {  
+    color: white;  
+ }
 
 aside {
     grid-area: aside;
