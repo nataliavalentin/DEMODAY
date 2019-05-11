@@ -1,15 +1,41 @@
 {% extends 'main.html' %}
 {% load staticfiles %}  
 {% block content %}   
-    <aside id="comoFunciona">
-        texto1     
-    </aside>
-    <article>
-        texto2
-    </article>
-    <section>
-        <div>
-            testo3
-        </div>
-    </section>    
+<aside id="comoFunciona">
+    <img src="{% static '/images/img-aside-home.png' %}" alt="cadastre-se">      
+</aside>
+<article>
+    <div>
+        <h2>Como funciona?</h2>
+        <h3>
+            O BORA trás os melhores rolês pra você!
+        </h3>               
+        <p>
+            Você pode realizar buscas por local ou região
+            de acordo com os seus interesses.
+            Assim, fica mais fácil descobrir qual o rolê mais próximo
+            para se encontrar com a galera e conhecer gente nova.
+            Ta afim de novas aventuras e histórias pra contar? BORA!
+        </p>        
+        <div id="img-txt-como-funciona">
+            <div>           
+                <img src="{% static '/images/download.png' %}" alt="cadastre-se">            
+                <p>Cadastre-se</p>
+            </div>
+            <div>            
+                <img src="{% static '/images/download.png' %}" alt="Ative sua localização">           
+                <p>Ative sua localização</p>         
+            </div>   
+            <div>            
+                <img src="{% static '/images/download.png' %}" alt="Escolha o Rolê">          
+                <p>Escolha um rolê</p>
+            </div>            
+        </div>      
+    </div>
+</article>
+<section>
+    <div>
+        testo3
+    </div>
+</section>   
 {% endblock %}

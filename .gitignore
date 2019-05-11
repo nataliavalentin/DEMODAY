@@ -1,6 +1,6 @@
 myenv/
 .vscode
-__pycache__
+__pycache__/
 Python
 db.sqlite3
 .mypy_cache/
