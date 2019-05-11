@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -116,19 +116,19 @@ header main input {
 
 header main input::-webkit-input-placeholder {
     color: white;
- }
-  
- header main input:-moz-placeholder { /* Firefox 18- */
+}
+
+header main input:-moz-placeholder { /* Firefox 18- */
     color: white;  
- }
-  
- header main input::-moz-placeholder {  /* Firefox 19+ */
+}
+
+header main input::-moz-placeholder {  /* Firefox 19+ */
     color: white;  
- }
-  
- header main input:-ms-input-placeholder {  
+}
+
+header main input:-ms-input-placeholder {  
     color: white;  
- }
+}
 
 aside {
     grid-area: aside;
@@ -142,14 +142,17 @@ article{
     grid-area: article;
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
 article div{
-    height: 50%;
+    height: 100%;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 article div h2{
@@ -160,6 +163,7 @@ article div h2{
     margin: 0;  
     text-align: left;
     width: 490px;
+    height: 30%;
 }
 
 article div h3{
@@ -167,27 +171,21 @@ article div h3{
     color: rgb(10, 8, 8);  
     text-align: left;
     width: 490px;
+    height: 10%;
 }
 
 article div p {
     width: 490px;
+    height: 30%;
     text-align: left;
     line-height: 23px;
     color: rgb(10, 8, 8);
 }
 
-article div {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #img-txt-como-funciona {
     display: flex;
     flex-direction: row;
-    width: 490px;
+    width: 91%;
     justify-content:space-between;
     align-items: center;    
 }
@@ -229,18 +227,19 @@ footer{
     background-color: rgb(255, 217, 0);
 }
 
+/* Tamanho Tablet */
 @media(max-width:768px){
     body{
         grid-template-areas: 
         'header header'
-        'aside aside'
+        'article article'
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 30vh 20vh 10vh 40vh 20vh;    
+        grid-template-rows: 30vh 50vh 48vh 40vh 20vh;    
         grid-template-columns: 49vw 49vw;   
     }
-
+    
     .menuHamburguer {
         display: flex;
         flex-direction: column;
@@ -256,24 +255,91 @@ footer{
         transform: translateX(-50vw);
         transition: 0.5s;
     }
-
+    
     .abrirMenu {
         display: flex;
         flex-direction: column-reverse;
         transform: translateX(0);
     }   
+    
+    aside{
+        display: none;
+    }
 
+    article div{
+        width: 100%;
+    }
+    
+    article div h2{
+        text-align: center;
+        width: 100%;
+    }
+    
+    article div  h3{
+        text-align: center;
+        width: 100%;
+    }
+    
+    article div  p{
+        text-align: justify;
+        width: 69%;
+    }
+
+    #img-txt-como-funciona {
+        width: 70%; 
+    }
 }
 
+/* Tamanho Smartphone */
 @media(max-width:425px){
     body{
         grid-template-areas: 
         'header header'
-        'aside aside'
+        'article article'
+        'article article'
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 30vh 10vh 10vh 30vh 20vh;    
+        grid-template-rows: 30vh 50vh 40vh 40vh 30vh 20vh;    
         grid-template-columns: 49vw 49vw;   
     }
+      
+    article div h2{
+        font-size: 30pt;
+        height: 15%;
+    }
+
+    article div  h3{
+        font-size: 12pt;      
+        height: 10%;
+        margin:0;
+    }
+
+    article div  p{
+        display: none;
+    }
+
+    #img-txt-como-funciona{
+        width: 100%;
+        height: 89%;
+        flex-direction: column;
+    }
+
+    #img-txt-como-funciona div {     
+        width: 100%; 
+        height: 33%;
+        justify-content: center;
+    }
+
+    #img-txt-como-funciona div img {           
+        height: 60%;
+        width: 30%;        
+    }
+
+    #img-txt-como-funciona div p {           
+        height: 10%;     
+        display: block;
+        margin: 0%; 
+    }
+    
 }
