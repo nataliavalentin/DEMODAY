@@ -11,7 +11,7 @@ body {
     'aside article'
     'section section'
     'footer footer';
-    grid-template-rows:  100vh 50vh 40vh 40vh 30vh;
+    grid-template-rows:  100vh 50vh 40vh 110vh 30vh;
     grid-template-columns: 49vw 49.5vw;   
 }
 
@@ -219,8 +219,55 @@ article div p {
 
 section {
     grid-area: section;
-    background-color: rgb(0, 255, 0);
-}   
+    background-image: url("/static/images/pexels-photo-1267708.jpeg");
+    background-size: cover;
+    display: flex; 
+}
+
+.filtro { 
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0, .5), rgba(240, 0, 112, 0.5));
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.button1 {
+    padding: 0.8em 0em;
+    width: 500px;
+    background: #0077ff;
+    border-radius: 50px;
+    border: 0;
+    color:#fff;
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 2em;
+    text-transform: uppercase;
+}
+
+.button2 {
+    padding: 0.8em 0em;
+    width: 500px;
+    background: #f80000;
+    border-radius: 50px;
+    border: 0;
+    color:#fff;
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 2em;
+    text-transform: uppercase;
+}
 
 footer{
     grid-area: footer;
