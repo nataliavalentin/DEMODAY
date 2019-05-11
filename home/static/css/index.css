@@ -15,17 +15,19 @@ body {
     grid-template-columns: 49vw 49.79vw;
 }
 
-header {
-    grid-area: header;
-    background-image: url("/static/images/header.jpeg");
-    background-size: 100%;
-    font-family: 'Raleway', sans-serif;
+.menuHamburguer {
+    display: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 100px;
 }
 
-header div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.menuHamburguer div {
+    width: 100px;
+    height: 3px;
+    margin-top: 5px;
+    background-color: black;
 }
 
 .menuFixo {
@@ -42,6 +44,19 @@ header div {
     background: #f26e57;
     border: white solid 2px;
     color: white;
+}
+
+header {
+    grid-area: header;
+    background-image: url("/static/images/header.jpeg");
+    background-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header nav {
@@ -104,7 +119,7 @@ header main input::-webkit-input-placeholder {
  }
   
  header main input:-moz-placeholder { /* Firefox 18- */
-    color: red;  
+    color: white;  
  }
   
  header main input::-moz-placeholder {  /* Firefox 19+ */
@@ -146,6 +161,29 @@ footer{
         grid-template-rows: 30vh 20vh 10vh 40vh 20vh;    
         grid-template-columns: 49vw 49vw;   
     }
+
+    .menuHamburguer {
+        display: flex;
+        flex-direction: column;
+        width: 10px;
+        height: 30px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+    
+    header nav {
+        display: none;
+        flex-direction: column;
+        transform: translateX(-50vw);
+        transition: 0.5s;
+    }
+
+    .abrirMenu {
+        display: flex;
+        flex-direction: column-reverse;
+        transform: translateX(0);
+    }   
+
 }
 
 @media(max-width:425px){

@@ -8,3 +8,13 @@
         else botao.classList.remove('botaoFixo');
     });
 })();
+
+
+let janelinhaLateral = document.querySelector("header div nav");
+let menuHamburguer = document.querySelector(".menuHamburguer");
+
+function abrirMenu(){
+  janelinhaLateral.classList.toggle("abrirMenu");
+}
+
+menuHamburguer.onclick = abrirMenu;
