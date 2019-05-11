@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <script defer src="{% static 'js/script.js' %}"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Bora!</title>
 </head>
 <body>
@@ -17,10 +18,15 @@
             <a href=#>
                 BORA!
             </a>
+            <label class="menu-btn" id="menuToggle">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
             <nav>
                 <ul>
                     <li>
-                        <a href="#como-funciona">
+                       <a href="#comoFunciona">
                             Como Funciona
                         </a>
                     </li>
@@ -49,11 +55,11 @@
             </nav>
         </div>
         <main>
-                <h1>BORA PRA ONDE HOJE?</h1>
-            </main>
+            <h1>Bora pra onde hoje?</h1>
+            <input type="text" placeholder="Pesquise aqui um rolê por região">
+        </main>
     </header>
     {% block content %}
-        
     {% endblock %}
     <footer></footer>
 </body>
