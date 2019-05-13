@@ -12,7 +12,7 @@ body {
     'section section'
     'footer footer';
     grid-template-rows:  100vh 50vh 40vh 110vh 30vh;
-    grid-template-columns: 49vw 49.5vw;   
+    grid-template-columns: 49vw 49.7vw;   
 }
 
 .menuHamburguer {
@@ -48,9 +48,13 @@ body {
 
 header {
     grid-area: header;
-    background-image: url("/static/images/header.jpeg");
+    background-image: url("/static/images/home/header.png");
     background-size: 100%;
     font-family: 'Raleway', sans-serif;
+}
+
+header a img {  
+    width: 115px;
 }
 
 header div {
@@ -283,9 +287,15 @@ footer{
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 30vh 50vh 48vh 40vh 20vh;    
+        grid-template-rows: 100vh 50vh 48vh 40vh 20vh;    
         grid-template-columns: 49vw 49vw;   
     }
+
+    .abrirMenu {
+        display: flex;
+        flex-direction: column-reverse;
+        transform: translateX(0);
+    }   
     
     .menuHamburguer {
         display: flex;
@@ -295,6 +305,12 @@ footer{
         cursor: pointer;
         margin-left: 100px;
     }
+
+    header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
     
     header nav {
         display: none;
@@ -302,13 +318,7 @@ footer{
         transform: translateX(-50vw);
         transition: 0.5s;
     }
-    
-    .abrirMenu {
-        display: flex;
-        flex-direction: column-reverse;
-        transform: translateX(0);
-    }   
-    
+
     aside{
         display: none;
     }
