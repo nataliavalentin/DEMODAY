@@ -126,7 +126,84 @@ header main input:-ms-input-placeholder {
 }
 
 /* Fim Header */
-/* Como Funciona */
+/* ARTICLE, ASIDE - Como Funciona */
+
+#comoFunciona{
+    grid-area: article;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#comoFunciona div{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#comoFunciona div div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    width: 91%;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+#comoFunciona div div:nth-child(4) div {     
+    display: flex; 
+    width: 100px;  
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;    
+}
+
+#comoFunciona div div:nth-child(4) div img{
+    width: 90px;
+    height: 90px;    
+}
+
+#comoFunciona div div:nth-child(4) div p {
+    width: 119px;
+    height: 20px;
+    font-size: 13pt;
+    text-align: center;
+    color: #ee3f60;
+    font-family: 'Baloo Bhai', cursive;
+    line-height: 19px;
+}
+
+#comoFunciona div p {
+    width: 490px;
+    height: 30%;
+    text-align: left;
+    line-height: 23px;
+    color: rgb(10, 8, 8);
+}
+
+#comoFunciona div h2{
+    color: #ee3f60;
+    font-size: 40pt;
+    font-weight: inherit;    
+    font-family: 'Baloo Bhai', cursive;   
+    margin: 0;  
+    text-align: left;
+    width: 490px;
+    height: 30%;
+}
+
+#comoFunciona div h3{
+    font-weight: inherit;  
+    color: rgb(10, 8, 8);  
+    text-align: left;
+    width: 490px;
+    height: 10%;
+}
 
 aside {
     grid-area: aside;  
@@ -140,86 +217,12 @@ aside img{
     height: 84%;
 }
 
-article{
-    grid-area: article;
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-article div{
-    height: 80%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-article div h2{
-    color: #ee3f60;
-    font-size: 40pt;
-    font-weight: inherit;    
-    font-family: 'Baloo Bhai', cursive;   
-    margin: 0;  
-    text-align: left;
-    width: 490px;
-    height: 30%;
-}
-
-article div h3{
-    font-weight: inherit;  
-    color: rgb(10, 8, 8);  
-    text-align: left;
-    width: 490px;
-    height: 10%;
-}
-
-article div p {
-    width: 490px;
-    height: 30%;
-    text-align: left;
-    line-height: 23px;
-    color: rgb(10, 8, 8);
-}
-
-#img-txt-como-funciona {
-    display: flex;
-    flex-direction: row;
-    width: 91%;
-    justify-content:space-between;
-    align-items: center;    
-}
-
-#img-txt-como-funciona div {     
-    display: flex; 
-    width: 100px;  
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;    
-}
-
-#img-txt-como-funciona div img{
-    width: 90px;
-    height: 90px;    
-}
-
-#img-txt-como-funciona div p {
-    width: 119px;
-    height: 20px;
-    font-size: 13pt;
-    text-align: center;
-    color: #ee3f60;
-    font-family: 'Baloo Bhai', cursive;
-    line-height: 19px;
-}
+/* Fim Como Funciona*/
+/* Inscreva-se */
 
 section {
-    grid-area: section;
-    background-image: url("/static/images/pexels-photo-1267708.jpeg");
+    grid-area: section; 
+    background-image: url("/static/images/cadastro/pexels-photo-1267708.jpeg");
     background-size: cover;
     display: flex; 
 }
@@ -337,28 +340,29 @@ footer{
         display: none;
     }
 
-    article div {
+    #comoFunciona div {
         width: 100%;
     }
     
-    article div h2 {
+    #comoFunciona div h2 {
         text-align: center;
         width: 100%;
     }
     
-    article div  h3 {
+    #comoFunciona div  h3 {
         text-align: center;
         width: 100%;
     }
     
-    article div  p {
+    #comoFunciona div  p {
         text-align: justify;
         width: 69%;
     }
 
-    #img-txt-como-funciona {
+    #comoFunciona div div:nth-child(4) {
         width: 70%; 
     }
+    
 }
 
 /* Tamanho Smartphone */
@@ -375,39 +379,39 @@ footer{
         grid-template-columns: 49vw 49vw;   
     }
       
-    article div h2{
+    #comoFunciona div h2{
         font-size: 30pt;
         height: 15%;
     }
 
-    article div  h3{
+    #comoFunciona div  h3{
         font-size: 12pt;      
         height: 10%;
         margin:0;
     }
 
-    article div  p{
+    #comoFunciona div  p{
         display: none;
     }
 
-    #img-txt-como-funciona{
+    #comoFunciona div div:nth-child(4){
         width: 100%;
         height: 89%;
         flex-direction: column;
     }
 
-    #img-txt-como-funciona div {     
+    #comoFunciona div div:nth-child(4) div {     
         width: 100%; 
         height: 33%;
         justify-content: center;
     }
 
-    #img-txt-como-funciona div img {           
+    #comoFunciona div div:nth-child(4) div img {           
         height: 60%;
         width: 30%;        
     }
 
-    #img-txt-como-funciona div p {           
+    #comoFunciona div div:nth-child(4) div p {           
         height: 10%;     
         display: block;
         margin: 0%; 
