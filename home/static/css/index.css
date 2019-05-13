@@ -15,19 +15,10 @@ body {
     grid-template-columns: 49vw 49.7vw;   
 }
 
+/* Header (nav, imagem principal) */
+
 .menuHamburguer {
     display: none;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
-    margin-left: 100px;
-}
-
-.menuHamburguer div {
-    width: 100px;
-    height: 3px;
-    margin-top: 5px;
-    background-color: black;
 }
 
 .menuFixo {
@@ -134,7 +125,9 @@ header main input:-ms-input-placeholder {
     color: white;  
 }
 
+/* Fim Header */
 /* Como Funciona */
+
 aside {
     grid-area: aside;  
     display: flex; 
@@ -283,7 +276,7 @@ footer{
 
 /* Tamanho Tablet */
 @media(max-width:768px){
-    body{
+    body {
         grid-template-areas: 
         'header header'
         'article article'
@@ -291,22 +284,36 @@ footer{
         'section section'
         'footer footer';
         grid-template-rows: 100vh 50vh 48vh 40vh 20vh;    
-        grid-template-columns: 49vw 49vw;   
+        grid-template-columns: 49vw 49.7vw;   
     }
 
     .abrirMenu {
         display: flex;
-        flex-direction: column-reverse;
-        transform: translateX(0);
+        flex-direction: column;        
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
+        align-items: flex-end;
+        background-color: #00000061;
+        width: 100%;
+        padding: 10px;
     }   
     
+    .aparecerBotao {
+        visibility: visible;
+    }
+
     .menuHamburguer {
         display: flex;
-        flex-direction: column;
-        width: 10px;
-        height: 30px;
         cursor: pointer;
-        margin-left: 100px;
+    }
+
+    .menuFixo {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logoNav {
+        visibility: hidden;
     }
 
     header {
@@ -316,31 +323,35 @@ footer{
     }
     
     header nav {
-        display: none;
+        display: flex;
         flex-direction: column;
-        transform: translateX(-50vw);
-        transition: 0.5s;
+        justify-content: flex-end;
+        align-items: center;
     }
 
-    aside{
+    header nav ul {
+        visibility: hidden;
+    }
+
+    aside {
         display: none;
     }
 
-    article div{
+    article div {
         width: 100%;
     }
     
-    article div h2{
+    article div h2 {
         text-align: center;
         width: 100%;
     }
     
-    article div  h3{
+    article div  h3 {
         text-align: center;
         width: 100%;
     }
     
-    article div  p{
+    article div  p {
         text-align: justify;
         width: 69%;
     }
