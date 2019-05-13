@@ -134,12 +134,17 @@ header main input:-ms-input-placeholder {
     color: white;  
 }
 
+/* Como Funciona */
 aside {
-    grid-area: aside;
-    background-color: white;
-    display: flex;
-    justify-content: center;
+    grid-area: aside;  
+    display: flex; 
     align-items: center;
+    justify-content: center;
+}
+
+aside img{
+    width: 80%;
+    height: 84%;
 }
 
 article{
@@ -148,10 +153,12 @@ article{
     font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 article div{
-    height: 100%;
+    height: 80%;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -204,11 +211,7 @@ article div p {
 
 #img-txt-como-funciona div img{
     width: 90px;
-    height: 90px;
-    border-radius: 30%;
-    border-color:  #ee3f60;
-    border-width: 2px;
-    border-style:solid;
+    height: 90px;    
 }
 
 #img-txt-como-funciona div p {
