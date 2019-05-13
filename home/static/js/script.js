@@ -9,15 +9,13 @@
     });
 })();
 
-let logoNav = document.querySelector("header div a img");
-let janelinhaLateral = document.querySelectorAll("header div nav ul");
+let janelinhaLateral = document.querySelectorAll("header div nav ul li");
 let menuHamburguer = document.querySelector(".menuHamburguer");
 
 function abrirMenu(){
-  for (x of janelinhaLateral) {
-    x.classList.toggle("aparecerBotao");
+  for (item of janelinhaLateral) {
+    item.classList.toggle("aparecerBotao");
   }
-  logoNav.classList.toggle("logoNav");
 }
 
 menuHamburguer.onclick = abrirMenu;

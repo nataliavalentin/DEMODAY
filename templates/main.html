@@ -15,39 +15,38 @@
 <body>
     <header>
         <div>
-            <a href=#>
-                <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">
-            </a>
             <nav>
-                <div class="menuHamburguer">
-                    <i class="fas fa-bars fa-2x"></i>
-                </div>
+                <a href="#" id="logoMobile">
+                    <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">
+                </a>
                 <ul>
+                    <li>
+                        <a href=#>
+                            <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">
+                        </a>
+                    </li>
                     <li>
                        <a href="#comoFunciona">
                             Como Funciona
                         </a>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <a href="#">
                             Contato
                         </a>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <a href="#">
                             Inscrever-se
                         </a>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <article id="login">
                             <a href="#">Entrar</a>
                         </article>
+                    </li>
+                    <li class="menuHamburguer">
+                        <i class="fas fa-bars fa-2x"></i>
                     </li>
                 </ul>
             </nav>

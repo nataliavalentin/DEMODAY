@@ -24,7 +24,7 @@ body {
 .menuFixo {
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: auto;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
 }
 
@@ -44,24 +44,26 @@ header {
     font-family: 'Raleway', sans-serif;
 }
 
+header div {
+    padding: 0px 12px 0px 0px;
+}
+
+header .fa-bars {
+    color: white;
+}
+
+#logoMobile {  
+    display: none;
+}
+
 header a img {  
     width: 115px;
 }
 
-header div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-header nav {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;    
-    align-items: center;
-}
-
 header nav ul {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
     list-style-type: none;
 }
 
@@ -290,6 +292,10 @@ footer{
         grid-template-columns: 49vw 49.7vw;   
     }
 
+    #logoMobile {
+        display: flow-root;
+    }
+
     .abrirMenu {
         display: flex;
         flex-direction: column;        
@@ -302,7 +308,7 @@ footer{
     }   
     
     .aparecerBotao {
-        visibility: visible;
+        display: flex !important;
     }
 
     .menuHamburguer {
@@ -311,12 +317,7 @@ footer{
     }
 
     .menuFixo {
-        height: auto;
-        padding: 10px;
-    }
-
-    .logoNav {
-        visibility: hidden;
+        padding: 0px;
     }
 
     header {
@@ -327,13 +328,32 @@ footer{
     
     header nav {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: flex-end;
     }
 
-    header nav ul {
-        visibility: hidden;
+    header nav ul li {
+        padding: 5px 0px 5px 0px;
+    }
+
+    header nav ul li:nth-child(2),
+    header nav ul li:nth-child(3),
+    header nav ul li:nth-child(4),
+    header nav ul li:nth-child(5) {
+        display: none;
+    }
+
+
+    header nav ul li img {
+        display: none;
     }
 
     aside {
