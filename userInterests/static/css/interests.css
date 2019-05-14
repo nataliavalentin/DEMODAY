@@ -36,13 +36,6 @@ nav div a{
 
 }
 
-p{
-    width: 100%;
-    text-align: center;
-    font-family: 'Lalezar', cursive;
-    color: #ee3f60;
-    font-size: 16pt;
-}
 
 section{
     display: flex;
@@ -61,12 +54,69 @@ section div{
 
 section div img{
    width: 100%;
+   
 }
 
 :hover section div{
     color: black;
 }
 
-.image:hover{
-    background-color: black;
+.musica{
+    margin: 0px;
+    background-image: url('/static/images/interesses/musica.png');
+    background-size: cover;
+}
+
+.fotografia{
+    margin: 0px;
+    background-image: url('/static/images/interesses/fotografia.png');
+    background-size:cover;
+}
+
+.moda{
+    margin: 0px;
+    background-image: url('/static/images/interesses/moda.png');
+    background-size:cover;
+}
+
+.viagem{
+    margin: 0px;
+    background-image: url('/static/images/interesses/viagem.png');
+    background-size:cover;
+}
+
+.gastronomia{
+    margin: 0px;
+    background-image: url('/static/images/interesses/gastronomia.png');
+    background-size:cover;
+}
+
+.diversao{
+    margin: 0px;
+    background-image: url('/static/images/interesses/diversao.png');
+    background-size:cover;
+}
+
+.tecnologia{
+    margin: 0px;
+    background-image: url('/static/images/interesses/tecnologia.png');
+    background-size:cover;
+}
+
+.bonsDrinks{
+    margin: 0px;
+    background-image: url('/static/images/interesses/bonsDrinks.png');
+    background-size:cover;
+}
+
+p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    color: white;
+    font-size: 28pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
