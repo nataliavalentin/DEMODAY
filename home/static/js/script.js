@@ -11,6 +11,7 @@
 
 let janelinhaLateral = document.querySelectorAll("header div nav ul li");
 let menuHamburguer = document.querySelector(".menuHamburguer");
+let icone = document.querySelector(".menuHamburguer i");
 
 function abrirMenu(){
   for (item of janelinhaLateral) {

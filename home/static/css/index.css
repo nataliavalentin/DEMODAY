@@ -293,8 +293,8 @@ footer{
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 100vh 50vh 48vh 40vh 20vh;    
-        grid-template-columns: 49vw 49.7vw;   
+        grid-template-rows: 100vh 50vh 48vh 80vh 20vh;    
+        grid-template-columns: 49vw 51vw;   
     }
 
     #logoMobile {
@@ -329,6 +329,7 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
+        background-image: url("/static/images/home/headerMobile.png");
     }
     
     header nav {
@@ -359,6 +360,10 @@ footer{
 
     header nav ul li img {
         display: none;
+    }
+
+    header main input {
+        width: 70%;
     }
 
     aside {
@@ -434,10 +439,22 @@ footer{
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 30vh 50vh 40vh 40vh 30vh 20vh;    
-        grid-template-columns: 49vw 49vw;   
+        grid-template-rows: 76vh 50vh 40vh 40vh 30vh 20vh;    
+        grid-template-columns: 49vw 49.7vw;   
+    }
+
+    header {
+        background-image: url("/static/images/home/headerMobile.png");
     }
       
+    header main {    
+        padding: 165px 0;
+    }
+
+    header main input {
+        width: 90%;
+    }   
+
     #comoFunciona div h2{
         font-size: 30pt;
         height: 15%;
