@@ -244,6 +244,11 @@ section div {
     width: 100%;
 }
 
+section img{
+    width: 300px;
+    padding-bottom: 30px;
+}
+
 .button1 {
     padding: 0.8em 0em;
     width: 500px;

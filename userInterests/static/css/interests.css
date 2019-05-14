@@ -19,13 +19,14 @@ nav div{
     color: white;
     align-items: center;
     font-family: 'Raleway', sans-serif;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav div img{
     margin: 4px;
     width: 40px;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
 }
 
 nav div a{
@@ -46,13 +47,26 @@ p{
 section{
     display: flex;
     flex-flow: wrap;
-    background-color: black;
+    background-color: snow;
     justify-content: space-around;
 }
 
 section div{
-    margin: 4px;
     background-color: white;
-    width: 327px;
-    height: 280px; 
+    width: 25%;
+    height: 283px; 
+    display: flex;
+
+}
+
+section div img{
+   width: 100%;
+}
+
+:hover section div{
+    color: black;
+}
+
+.image:hover{
+    background-color: black;
 }
