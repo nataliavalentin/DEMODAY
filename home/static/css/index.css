@@ -40,6 +40,9 @@ body {
 
 header {
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url("/static/images/home/header.png");
     background-size: 100%;
     font-family: 'Raleway', sans-serif;
