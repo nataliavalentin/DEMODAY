@@ -387,6 +387,40 @@ footer{
     #comoFunciona div div:nth-child(4) {
         width: 70%; 
     }
+
+    .button1 {
+        padding: 0.8em 0em;
+        width: 350px;
+        background: #0077ff;
+        border-radius: 50px;
+        border: 0;
+        color:#fff;
+        font-size: 10pt;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 1em 2em;
+        text-transform: uppercase;
+    }
+    
+    .button2 {
+        padding: 0.8em 0em;
+        width: 350px;
+        background: #f80000;
+        border-radius: 50px;
+        border: 0;
+        color:#fff;
+        font-size: 10pt;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 1em 2em;
+        text-transform: uppercase;
+    }
+
+    .boraInscreva {
+        width: 200px;
+    }
     
 }
 
@@ -440,6 +474,40 @@ footer{
         height: 10%;     
         display: block;
         margin: 0%; 
+    }
+
+    .button1 {
+        padding: 0.8em 0em;
+        width: 225px;
+        background: #0077ff;
+        border-radius: 50px;
+        border: 0;
+        color:#fff;
+        font-size: 6pt;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 1em 2em;
+        text-transform: uppercase;
+    }
+    
+    .button2 {
+        padding: 0.8em 0em;
+        width: 225px;
+        background: #f80000;
+        border-radius: 50px;
+        border: 0;
+        color:#fff;
+        font-size: 6pt;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 1em 2em;
+        text-transform: uppercase;
+    }
+
+    .boraInscreva {
+        width: 120px;
     }
     
 }
