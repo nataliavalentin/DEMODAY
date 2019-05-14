@@ -23,6 +23,7 @@ body {
 
 .menuFixo {
     position: fixed;
+    top: 0px;
     width: 100%;
     height: auto;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
@@ -88,7 +89,6 @@ header main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 315px 0;
 }
 
 header main h1 {
@@ -326,11 +326,12 @@ footer{
     }
 
     header {
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         background-image: url("/static/images/home/headerMobile.png");
     }
+    
     
     header nav {
         display: flex;
@@ -362,6 +363,17 @@ footer{
         display: none;
     }
 
+    header main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header main h1 {
+        font-size: 35pt;
+    }
+    
     header main input {
         width: 70%;
     }
@@ -444,16 +456,26 @@ footer{
     }
 
     header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         background-image: url("/static/images/home/headerMobile.png");
     }
       
-    header main {    
-        padding: 165px 0;
+    header main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
+    
+    header main h1 {
+        font-size: 35pt;
+    }  
 
     header main input {
         width: 90%;
-    }   
+    }  
 
     #comoFunciona div h2{
         font-size: 30pt;
