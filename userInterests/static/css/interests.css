@@ -2,8 +2,6 @@ body{
     margin: 0;
 }
 
-
-
 nav{
     height: 14vh;
     width: 100%;
@@ -33,7 +31,6 @@ nav div a{
     color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-
 }
 
 
@@ -49,12 +46,10 @@ section div{
     width: 25%;
     height: 283px; 
     display: flex;
-
 }
 
 section div img{
-   width: 100%;
-   
+   width: 100%;  
 }
 
 :hover section div{
@@ -65,48 +60,56 @@ section div img{
     margin: 0px;
     background-image: url('/static/images/interesses/musica.png');
     background-size: cover;
+    display: flex;
 }
 
 .fotografia{
     margin: 0px;
     background-image: url('/static/images/interesses/fotografia.png');
     background-size:cover;
+    display: flex;
 }
 
 .moda{
     margin: 0px;
     background-image: url('/static/images/interesses/moda.png');
     background-size:cover;
+    display: flex;
 }
 
 .viagem{
     margin: 0px;
     background-image: url('/static/images/interesses/viagem.png');
     background-size:cover;
+    display: flex;
 }
 
 .gastronomia{
     margin: 0px;
     background-image: url('/static/images/interesses/gastronomia.png');
     background-size:cover;
+    display: flex;
 }
 
 .diversao{
     margin: 0px;
     background-image: url('/static/images/interesses/diversao.png');
     background-size:cover;
+    display: flex;
 }
 
 .tecnologia{
     margin: 0px;
     background-image: url('/static/images/interesses/tecnologia.png');
     background-size:cover;
+    display: flex;
 }
 
 .bonsDrinks{
     margin: 0px;
     background-image: url('/static/images/interesses/bonsDrinks.png');
     background-size:cover;
+    display: flex;
 }
 
 p{
@@ -119,4 +122,67 @@ p{
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+}
+
+.musica:hover{
+    opacity: 0.7;
+}
+
+.fotografia:hover{
+    opacity: 0.7;
+}
+
+.moda:hover{
+    opacity: 0.7;
+}
+
+.viagem:hover{
+    opacity: 0.7; 
+}
+
+.gastronomia:hover{
+    opacity: 0.7;
+    background-color: black;
+}
+
+.diversao:hover{
+    opacity: 0.7;
+    background-color: black;
+}
+
+.tecnologia:hover{
+    opacity: 0.7;
+    background-color: black;
+}
+
+.bonsDrinks:hover{
+    opacity: 0.7;
+    background-color: black;
+}
+
+/* Tamanho Tablet */
+@media(max-width:981px){
+    section div{
+    width: 50%;
+    height: 283px; 
+    display: flex;
+    }
+}
+
+/* Tamanho Ipad Pro */
+@media(max-width:1024px){
+    section div{
+    width: 50%;
+    height: 283px; 
+    display: flex;
+    }
+}
+
+            /* Tamanho Ipad Pro */
+@media(max-width:545px){
+    section div{
+    width: 100%;
+    height: 283px; 
+    display: flex;
+    }
 }
