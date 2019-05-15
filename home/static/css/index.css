@@ -11,7 +11,7 @@ body {
     'aside article'
     'section section'
     'footer footer';
-    grid-template-rows:  100vh 50vh 60vh 110vh 30vh;
+    grid-template-rows:  100vh 50vh 60vh 110vh 25vh;
     grid-template-columns: 49vw 49.7vw;   
 }
 
@@ -287,7 +287,46 @@ section img{
 
 footer{
     grid-area: footer;
-    background-color: rgb(255, 217, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: #ee3f60;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a{
+    margin-top: 2.5vh;
+    height: 1vh;
+    text-decoration: none;
+    color: #ee3f60;
+}
+
+#footerLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+#copyright{
+font-size: 10pt;
+}
+
+#iconsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons{
+    display: flex;
+    justify-content: space-around;
+    width: 16vw;
+}
+
+#icons img{
+    width: 35px;
 }
 
 /* Tamanho Tablet */
