@@ -142,22 +142,101 @@ p{
 
 .gastronomia:hover{
     opacity: 0.7;
-    background-color: black;
 }
 
 .diversao:hover{
     opacity: 0.7;
-    background-color: black;
 }
 
 .tecnologia:hover{
     opacity: 0.7;
-    background-color: black;
 }
 
 .bonsDrinks:hover{
     opacity: 0.7;
-    background-color: black;
+}
+
+/*fim das imagens, mores*/
+
+/*aqui começa o pop-up, que Deus me ajude*/
+
+.fundoPopup{
+    background-color: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    display: flex;
+}
+
+.popup{
+    position: fixed;
+    border-radius: 25px;
+    width: 480px;
+    height: 350px;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#ana{
+    color: #ee3f60; 
+    margin: 0;
+    padding-top: 10px;
+}
+
+#txtAna{
+    color: gray;
+    font-size: 17px;
+    font-family: 'Segoe UI';
+    margin: 0;
+}
+
+.txtAna{
+    width: 380px;
+    height: 100px;
+    margin: 0;
+}
+
+#ana{
+    font-size: 20pt;
+}
+
+.logoColorido{
+    width: 250px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+section div img{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    font-size: 17pt;
+    border-radius: 50px;
+    box-shadow: none;
+    font-family:'Lalezar', cursive;
+    color: antiquewhite;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+}
+
+.botao{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Tamanho Tablet */
@@ -178,11 +257,31 @@ p{
     }
 }
 
-            /* Tamanho Ipad Pro */
+/* Tamanho Iphone*/
 @media(max-width:545px){
     section div{
     width: 100%;
     height: 283px; 
     display: flex;
     }
+
+    .popup{
+        position: fixed;
+        border-radius: 25px;
+        width: 300px;
+        height: 350px;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+        padding: 15px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .txtAna{
+        width:300px;
+    }
 }
+
+
