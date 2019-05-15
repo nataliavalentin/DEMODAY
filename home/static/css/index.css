@@ -11,7 +11,7 @@ body {
     'aside article'
     'section section'
     'footer footer';
-    grid-template-rows:  100vh 50vh 40vh 110vh 30vh;
+    grid-template-rows:  100vh 50vh 60vh 110vh 25vh;
     grid-template-columns: 49vw 49.7vw;   
 }
 
@@ -141,11 +141,12 @@ header main input:-ms-input-placeholder {
     height: 100%;
     display: flex;
     align-items: center;
+    padding-top: 13%;
 }
 
 #comoFunciona div{
     height: 80%;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,9 +156,9 @@ header main input:-ms-input-placeholder {
 #comoFunciona div div:nth-child(4) {
     display: flex;
     flex-direction: row;
-    width: 91%;
+    width: 70%;
     justify-content:space-between;
-    align-items: center;    
+    align-items: flex-start;    
 }
 
 #comoFunciona div div:nth-child(4) div {     
@@ -184,8 +185,8 @@ header main input:-ms-input-placeholder {
 }
 
 #comoFunciona div p {
-    width: 490px;
-    height: 30%;
+    width: 70%;
+    height: 38%;
     text-align: left;
     line-height: 23px;
     color: rgb(10, 8, 8);
@@ -194,20 +195,21 @@ header main input:-ms-input-placeholder {
 #comoFunciona div h2{
     color: #ee3f60;
     font-size: 40pt;
-    font-weight: inherit;    
+    font-weight: normal;
+    line-height: 43px;    
     font-family: 'Baloo Bhai', cursive;   
     margin: 0;  
     text-align: left;
-    width: 490px;
-    height: 30%;
+    width: 70%;
+    height: 15%;
 }
 
 #comoFunciona div h3{
     font-weight: inherit;  
     color: rgb(10, 8, 8);  
     text-align: left;
-    width: 490px;
-    height: 10%;
+    width: 70%;
+    height: 5%;
 }
 
 aside {
@@ -215,6 +217,7 @@ aside {
     display: flex; 
     align-items: center;
     justify-content: center;
+    padding-top: 13%;
 }
 
 aside img{
@@ -284,7 +287,46 @@ section img{
 
 footer{
     grid-area: footer;
-    background-color: rgb(255, 217, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: #ee3f60;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a{
+    margin-top: 2.5vh;
+    height: 1vh;
+    text-decoration: none;
+    color: #ee3f60;
+}
+
+#footerLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+#copyright{
+font-size: 10pt;
+}
+
+#iconsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons{
+    display: flex;
+    justify-content: space-around;
+    width: 16vw;
+}
+
+#icons img{
+    width: 35px;
 }
 
 /* Tamanho Tablet */
@@ -299,11 +341,11 @@ footer{
         grid-template-rows: 100vh 50vh 48vh 80vh 20vh;    
         grid-template-columns: 49vw 51vw;   
     }
-
+    
     #logoMobile {
         display: flow-root;
     }
-
+    
     .abrirMenu {
         display: flex;
         flex-direction: column;        
@@ -318,16 +360,16 @@ footer{
     .aparecerBotao {
         display: flex !important;
     }
-
+    
     .menuHamburguer {
         display: flex;
         cursor: pointer;
     }
-
+    
     .menuFixo {
         padding: 0px;
     }
-
+    
     header {
         display: flex;
         flex-direction: column;
@@ -349,23 +391,23 @@ footer{
         justify-content: space-around;
         align-items: flex-end;
     }
-
+    
     header nav ul li {
         padding: 5px 0px 5px 0px;
     }
-
+    
     header nav ul li:nth-child(2),
     header nav ul li:nth-child(3),
     header nav ul li:nth-child(4),
     header nav ul li:nth-child(5) {
         display: none;
     }
-
-
+    
+    
     header nav ul li img {
         display: none;
     }
-
+    
     header main {
         display: flex;
         justify-content: space-between;
@@ -380,34 +422,30 @@ footer{
     header main input {
         width: 70%;
     }
-
+    
     aside {
         display: none;
     }
-
-    #comoFunciona div {
-        width: 100%;
-    }
     
-    #comoFunciona div h2 {
+    #comoFunciona div h2{
         text-align: center;
         width: 100%;
     }
     
-    #comoFunciona div  h3 {
+    #comoFunciona div h3{
         text-align: center;
         width: 100%;
     }
     
-    #comoFunciona div  p {
+    #comoFunciona div p{
         text-align: justify;
-        width: 69%;
+        line-height: 17px;
     }
-
+    
     #comoFunciona div div:nth-child(4) {
         width: 70%; 
     }
-
+    
     .button1 {
         padding: 0.8em 0em;
         width: 350px;
@@ -437,7 +475,7 @@ footer{
         margin: 1em 2em;
         text-transform: uppercase;
     }
-
+    
     .boraInscreva {
         width: 200px;
     }
@@ -457,14 +495,14 @@ footer{
         grid-template-rows: 76vh 50vh 40vh 40vh 30vh 20vh;    
         grid-template-columns: 49vw 49.7vw;   
     }
-
+    
     header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         background-image: url("/static/images/home/headerMobile.png");
     }
-      
+    
     header main {
         display: flex;
         justify-content: space-between;
@@ -475,49 +513,53 @@ footer{
     header main h1 {
         font-size: 35pt;
     }  
-
+    
     header main input {
         width: 90%;
     }  
-
+    
+    #comoFunciona div {
+        width: 100%;
+    }
+    
     #comoFunciona div h2{
         font-size: 30pt;
         height: 15%;
     }
-
+    
     #comoFunciona div  h3{
         font-size: 12pt;      
-        height: 10%;
+        height: 2%;
         margin:0;
     }
-
-    #comoFunciona div  p{
+    
+    #comoFunciona div p{
         display: none;
     }
-
+    
     #comoFunciona div div:nth-child(4){
         width: 100%;
         height: 89%;
         flex-direction: column;
     }
-
+    
     #comoFunciona div div:nth-child(4) div {     
         width: 100%; 
         height: 33%;
         justify-content: center;
     }
-
+    
     #comoFunciona div div:nth-child(4) div img {           
-        height: 60%;
-        width: 30%;        
+        height: 53%;
+        width: 25%;        
     }
-
+    
     #comoFunciona div div:nth-child(4) div p {           
         height: 10%;     
         display: block;
         margin: 0%; 
     }
-
+    
     .button1 {
         padding: 0.8em 0em;
         width: 225px;
@@ -547,7 +589,7 @@ footer{
         margin: 1em 2em;
         text-transform: uppercase;
     }
-
+    
     .boraInscreva {
         width: 120px;
     }

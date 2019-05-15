@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="{% static 'css/interests.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <script defer src="{% static 'js/interesses.js' %}"></script>
     <title>Bora!</title>
 </head>
 <body>
+    <div class="fundoPopup">
+.
+    </div>
+
     <nav>
         <div>
             Olá, Ana Laura! <img src="{% static '/images/interesses/anaLaura.png' %}" alt="">
             <a href="/">Sair</a>
         </div>
     </nav>
+    
         <section>
+            <div class="popup">
+                <div class="logoColorido">
+                    <img src="/static/images/interesses/logoColorido.png" alt="">
+                </div>
+                <p id="ana">Olá, Ana Laura!</p>
+                <div class="txtAna">
+                    <p id="txtAna">Agora precisamos conhecer você melhor. Selecione algumas categorias de rolê para começar.</p>
+                </div>
+            <div class="botao">
+                <button>BORA</button>
+            </div>
+            </div>
+
                 <div class="musica"><p>MÚSICA</p></div>
                 <div class="fotografia"><p>FOTOGRAFIA</p></div>
                 <div class="moda"><p>MODA</p></div>
@@ -27,6 +46,5 @@
                 <div class="tecnologia"><p>TECNOLOGIA</p></div>
                 <div class="bonsDrinks"><p>BONS DRINKS</p></div>
         </section>
-
 </body>
 </html>
