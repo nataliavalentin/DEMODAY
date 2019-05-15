@@ -23,6 +23,7 @@ body {
 
 .menuFixo {
     position: fixed;
+    top: 0px;
     width: 100%;
     height: auto;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
@@ -39,6 +40,9 @@ body {
 
 header {
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url("/static/images/home/header.png");
     background-size: 100%;
     font-family: 'Raleway', sans-serif;
@@ -88,7 +92,6 @@ header main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 315px 0;
 }
 
 header main h1 {
@@ -293,8 +296,8 @@ footer{
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 100vh 50vh 48vh 40vh 20vh;    
-        grid-template-columns: 49vw 49.7vw;   
+        grid-template-rows: 100vh 50vh 48vh 80vh 20vh;    
+        grid-template-columns: 49vw 51vw;   
     }
 
     #logoMobile {
@@ -326,10 +329,12 @@ footer{
     }
 
     header {
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: url("/static/images/home/headerMobile.png");
     }
+    
     
     header nav {
         display: flex;
@@ -359,6 +364,21 @@ footer{
 
     header nav ul li img {
         display: none;
+    }
+
+    header main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header main h1 {
+        font-size: 35pt;
+    }
+    
+    header main input {
+        width: 70%;
     }
 
     aside {
@@ -434,10 +454,32 @@ footer{
         'article article'
         'section section'
         'footer footer';
-        grid-template-rows: 30vh 50vh 40vh 40vh 30vh 20vh;    
-        grid-template-columns: 49vw 49vw;   
+        grid-template-rows: 76vh 50vh 40vh 40vh 30vh 20vh;    
+        grid-template-columns: 49vw 49.7vw;   
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: url("/static/images/home/headerMobile.png");
     }
       
+    header main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header main h1 {
+        font-size: 35pt;
+    }  
+
+    header main input {
+        width: 90%;
+    }  
+
     #comoFunciona div h2{
         font-size: 30pt;
         height: 15%;
