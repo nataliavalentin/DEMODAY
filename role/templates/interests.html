@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/interests.css' %}"> 
+{% endblock %}
+{% block scripts %}
+    <script defer src="{% static 'js/interesses.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <div class="fundoPopup">
+        .
+    </div>
+    <section>
+        <div class="popup">
+            <div class="logoColorido">
+                <img src="/static/images/interesses/logoColorido.png" alt="">
+            </div>
+            <p id="ana">Olá, Ana Laura!</p>
+            <div class="txtAna">
+                <p id="txtAna">Agora precisamos conhecer você melhor. Selecione algumas categorias de rolê para começar.</p>
+            </div>
+        <div class="botao">
+            <button>BORA</button>
+        </div>
+        </div>
+
+            <div class="musica"><p>MÚSICA</p></div>
+            <div class="fotografia"><p>FOTOGRAFIA</p></div>
+            <div class="moda"><p>MODA</p></div>
+            <div class="viagem"><p>VIAGEM</p></div>
+            <div class="gastronomia"><p>GASTRONOMIA</p></div>
+            <div class="diversao"><p>DIVERSÃO</p></div>
+            <div class="tecnologia"><p>TECNOLOGIA</p></div>
+            <div class="bonsDrinks"><p>BONS DRINKS</p></div>
+    </section>
+{% endblock %}
