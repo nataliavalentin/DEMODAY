@@ -1,5 +1,59 @@
+/*ID*/
+#filtro { 
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0, .5), rgba(240, 0, 112, 0.5), rgba(240, 0, 112, 0.5));
+}
+
+/*TAGS HTML*/
 body{
     margin: 0;
+}
+
+form{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    width: 50%;
+}
+
+form a{
+    text-decoration: none;
+    color:white;
+    width: 130px;
+    text-align: center;
+}
+
+form button{
+    width: 130px;
+    height: 35px;
+    background-color: #ee3f60;  
+    border:none;  
+    border-radius: 20px;
+    border: white solid 2px;
+}
+
+form button a{
+    text-decoration: none;; 
+    color: white;   
+}
+
+form button:hover {
+    font-size: 20px; 
+    cursor: pointer; 
+}
+
+form img{
+    width: 180px;
+}
+
+form input{
+    width: 50%;
+    height: 20px;
+    border-radius: 2px;
+    border: white solid 2px;
 }
 
 nav{
@@ -41,53 +95,6 @@ section article {
     justify-content: center;
 }
 
-form{    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 60%;
-    width: 50%;
-}
-
-form a{
-    text-decoration: none;
-    color:white;
-    width: 130px;
-    text-align: center;
-}
-
-form img{
-    width: 180px;
-}
-
-form button{
-    width: 130px;
-    height: 35px;
-    background-color: #ee3f60;  
-    border:none;  
-    border-radius: 20px;
-    border: white solid 2px;
-}
-
-form button a{
-    text-decoration: none;
-    color: white;   
-}
-
-form input{
-    width: 50%;
-    height: 20px;
-    border-radius: 2px;
-    border: white solid 2px;
-}
-
-#filtro { 
-    width:100%;
-    height:100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0, .5), rgba(240, 0, 112, 0.5), rgba(240, 0, 112, 0.5));
-}
-
 /* Tamanho Tablet */
 @media(max-width:768px){  
    
@@ -109,12 +116,11 @@ form input{
     form{
         width:100%;
     }
-
-    form a, button{
-        width: 70px;
-    }  
     
     form a{
         font-size: 10pt;
     }
+    form a, button{
+        width: 70px;
+    }  
 }

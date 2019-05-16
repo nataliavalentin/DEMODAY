@@ -18,10 +18,12 @@ from django.urls import include, path
 from home.views import Home
 from userInterests.views import UsuarioInter
 from login.views import Login
+from login.views import logout_request
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home ),
     path('usuario_interesses/', UsuarioInter),
     path('entrar/', Login, name='login'),
+    path('logout/', logout_request, name='logout'),
 ]
