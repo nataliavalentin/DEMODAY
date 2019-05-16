@@ -11,7 +11,7 @@ body {
     'aside article'
     'section section'
     'footer footer';
-    grid-template-rows:  100vh 50vh 60vh 110vh 25vh;
+    grid-template-rows:  100vh 50vh 60vh 110vh 20vh;
     grid-template-columns: 49vw 49.7vw;   
 }
 
@@ -291,42 +291,80 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    color: #ee3f60;
+    background-color: black;
+    color: darkgray;
     font-family: 'Raleway', sans-serif;
+}
+
+#bora{
+    margin-top: 5vh;
+    height: 40px;
+    width: 115px;
 }
 
 footer a{
     margin-top: 2.5vh;
     height: 1vh;
     text-decoration: none;
-    color: #ee3f60;
+    font-size: 10pt;
+    color: darkgray;
 }
 
 #footerLinks{
     display: flex;
     justify-content: space-around;
-    width: 90vw;
+    width: 100%;
 }
 
-#copyright{
-font-size: 10pt;
-}
-
-#iconsText{
+#links{
+    margin-left: 12vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+
+#copyright{
+font-size: 8pt;
+}
+
+#redesSocias{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4vh;
+    width: 20vw;
+    height: 50px;
+
+}
+
+#redesSocias .image{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#redesSocias img{
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0;
+    border: 0;
+    width: 35px;
+}
+
+#links :hover{
+    text-decoration: underline;
+}
+
+#redesSocias img:hover{
+    background-color: gray;
+    border-radius: 50px;
 }
 
 #icons{
     display: flex;
-    justify-content: space-around;
-    width: 16vw;
-}
-
-#icons img{
-    width: 35px;
 }
 
 /* Tamanho Tablet */
