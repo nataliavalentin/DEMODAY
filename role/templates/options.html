@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/options.css' %}"> 
+{% endblock %}
+{% block scripts %}
+    <script defer src="{% static 'js/options.js' %}"></script>
+{% endblock %}
+{% block content %}
+<body>
+    <section>
+            <div class="txt1"><p>txt1</p></div>
+            <div class="txt2"><p>txt2</p></div>
+            <div class="paulista">
+                <p>paulista</p>
+                <img src="masp.png" alt="">
+            </div>
+
+            <div class="masp"><p>MASP</p></div>
+            <div class="charme"><p>Chame da Paulista</p></div>
+            <div class="feiraGastronomica"><p>>Feira Gastronômica</p></div>
+            <div class="casaDasRosas"><p>Casa das Rosas</p></div>
+            <div class="feimi"><p>Feimi - Feira da Moda Inverno</p></div>
+    </section>
+</body>
+{% endblock %}

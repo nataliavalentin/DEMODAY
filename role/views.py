@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def user_interests(request):
     return render (request, 'interests.html')
+
+def user_options(request):
+    return render (request, 'options.html')
