@@ -1,22 +1,26 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block links %}
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
 {% endblock %}
 {% block content %}   
-    <section>        
-        <article id="filtro">      
-            <form action="" method="POST">           
-                <img src="{% static 'images/logo/boraCurtirCidade.png' %}" alt="">
-                <input type="email" name="email"placeholder="nome@email.com">                        
-                <input type="password" name="pass" placeholder="********">            
-                <button><a href="">Entrar</a></button>
-                <a href="">Esqueceu sua senha?</a>
-                <a href="{% url 'user:register' %}">Cadastre-se</a>
-                <a href="{% url 'role:user_interests' %}">Tipo de Role</a>
-            </form>   
-        </article>     
-    </section>
+<section>        
+    <article id="filtro">      
+        <form action="" method="POST">           
+            <img src="{% static 'images/logo/boraCurtirCidade.png' %}" alt="">
+            <input type="email" name="email"placeholder="nome@email.com">                        
+            <input type="password" name="pass" placeholder="********">      
+            <button><a href="">Entrar</a></button>  
+            <div>
+                <a href="">Esqueceu a senha? </a>
+                |
+                <a href="{% url 'home:index'%}">Voltar</a>             
+                |
+                <a href="{% url 'user:register' %}">Cadastre-se</a>        
+            </div>            
+        </form>   
+    </article>     
+</section>
 {% endblock %}      
 
 

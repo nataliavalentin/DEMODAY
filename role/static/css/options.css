@@ -53,11 +53,43 @@ section{
     border-radius: 20px;  
 }
 
-section div:first-child, :nth-child(2){
+section div:first-child, div:nth-child(2){
     background-color: #2d2f33
 }
 
-section div img{
-    width: 50px;
-    height: 50px;
+#paulistaImg{
+    width: 110px;
+    height: 110px;
+}
+
+.paulista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+article{
+    font-family: 'Segoe UI';
+    color: white;
+    height: 130px;
+}
+article p{
+    font-size: 10pt;
+}
+
+article img{
+    width: 120px;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color:white;
+    background-color: #ee3f60;
 }
