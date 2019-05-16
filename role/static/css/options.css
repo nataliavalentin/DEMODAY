@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+nav{
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+}
+
+nav div{
+    display: flex;
+    margin: 6vw;
+    color: white;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div img{
+    margin: 4px;
+    width: 40px;
+}
+
+nav div a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #2d2f33;
+}
+
+section{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.txt1, .txt2, .paulista, .masp, .casaDasRosas, .feimi, .charme, .feiraGastronomica{
+    width: 45%;
+    height: 150px;
+    background-color: #57585b;
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;  
+}
+
+section div:first-child, :nth-child(2){
+    background-color: #2d2f33
+}
+
+section div img{
+    width: 50px;
+    height: 50px;
+}
