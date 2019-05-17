@@ -8,4 +8,3 @@ function fecharPopup(){
     container.style.display = 'none';
     fundo.style.display = 'none';
 }
-

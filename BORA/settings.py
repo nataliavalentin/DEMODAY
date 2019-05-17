@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'user',
     'role',
     'establishment',
-
 ]
 
 MIDDLEWARE = [
@@ -130,3 +129,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/var/www/static/',
 ]
+
+#Upload de Arquivos
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
