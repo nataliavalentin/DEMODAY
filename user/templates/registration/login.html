@@ -1,0 +1,16 @@
+</form>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+{% block content %}   
+<section>        
+    <article id="filtro">    
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>     
+    </article>     
+</section>
+{% endblock %}     

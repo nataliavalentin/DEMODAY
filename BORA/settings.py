@@ -133,3 +133,6 @@ STATICFILES_DIRS = [
 #Upload de Arquivos
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+
+#Redirecionamento de Login Correto
+LOGIN_REDIRECT_URL = '../../../role/register/'
