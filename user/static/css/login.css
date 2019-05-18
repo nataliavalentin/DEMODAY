@@ -63,6 +63,10 @@ form input{
     border: white solid 2px;
 }
 
+form div a:hover {
+    font-size: 14pt;
+}
+
 form ul{
     color: white;
     list-style-type: none;
