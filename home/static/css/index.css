@@ -317,7 +317,7 @@ footer a{
 }
 
 #links{
-    margin-left: 12vw;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -520,9 +520,7 @@ font-size: 8pt;
     
 }
 
-#links{
-    margin-left: 5vw;
-}
+
 
 /* Tamanho Smartphone */
 @media(max-width:425px){
@@ -635,27 +633,24 @@ font-size: 8pt;
     .boraInscreva {
         width: 120px;
     }
+
+    footer{
+        height: 60vh;
+    }
+    
+    #footerLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 40vh;
+    }
+    
+    #redesSocias p{
+        display: none;
+    }
     
 }
 
-footer{
-    height: 60vh;
-}
 
-#footerLinks{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 40vh;
-}
-
-#links{
-    display: flex;
-    height: 12vh;
-}
-
-#redesSocias p{
-    display: none;
-}
