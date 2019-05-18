@@ -14,7 +14,7 @@ def register(request):
     if formulario.is_valid():
         formulario.save()
         formulario = UserForm()
-        msg = 'Pedido realizado com sucesso'
+        msg = 'Cadastro realizado com sucesso!'
     
     contexto = {
         'form' : formulario,
