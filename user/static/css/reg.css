@@ -10,7 +10,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 70%;
+    height: 92%;
     width: 50%;
 }
 
@@ -61,10 +61,6 @@ form input{
     font-size: 12pt;
     border-radius: 5px;
     border: white solid 2px;
-}
-
-form div a:hover {
-    font-size: 14pt;
 }
 
 form ul{
