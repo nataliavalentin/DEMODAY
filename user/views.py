@@ -5,7 +5,6 @@ from user.forms import UserForm
 from user.models import User
 
 # Create your views here.
-
 def login(request):
     return render(request, 'login.html')
 
@@ -22,8 +21,3 @@ def register(request):
         'msg' : msg
     }
     return render(request, 'register.html', contexto)
-
-def logout_request(request):
-    logout(request)
-    messages.info(request, "Você saiu da sua conta!")
-    return redirect("home:index")

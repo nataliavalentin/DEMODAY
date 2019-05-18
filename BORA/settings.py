@@ -134,5 +134,6 @@ STATICFILES_DIRS = [
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
-#Redirecionamento de Login Correto
-LOGIN_REDIRECT_URL = '../../../role/register/'
+#Redirecionamento Login/Logout
+LOGIN_REDIRECT_URL = 'role:user_interests'
+LOGOUT_REDIRECT_URL = '/'

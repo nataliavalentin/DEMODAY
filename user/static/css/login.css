@@ -10,7 +10,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 60%;
+    height: 70%;
     width: 50%;
 }
 
@@ -27,10 +27,6 @@ form button{
     background-color: #ee3f60;      
     border-radius: 20px;
     border: white solid 2px;
-}
-
-form button a{
-    text-decoration: none;; 
     color: white;   
 }
 
@@ -62,6 +58,16 @@ form input{
     border: white solid 2px;
 }
 
+form label{
+    color: white;
+}
+
+form ul{
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
 section {    
     height: 90vh;
     font-family: 'Raleway', sans-serif;
@@ -81,7 +87,7 @@ section article {
         width:60%;
     }
 
-    form a, button{
+    form button{
         width: 100px;
     }    
 
