@@ -11,6 +11,13 @@
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Login</button>     
-    </article>     
+            <div>
+                <a href="">Esqueceu a senha? </a>          
+                <a href="{% url 'home:index' %}">Voltar</a>           
+                <a href="{% url 'user:register' %}">Cadastre-se</a>        
+            </div>  
+    </article> 
+      
 </section>
+
 {% endblock %}     
