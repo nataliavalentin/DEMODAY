@@ -11,24 +11,21 @@ nav{
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
 }
 
-nav div{
-    display: flex;
+nav ul{
     margin: 6vw;
-    align-items: center;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-nav div ul{
-    list-style-type: none;
+    color: white;
     font-family: 'Raleway', sans-serif;
+    width: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
 }
 
-nav div ul li a{
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
     color: white;
     text-decoration: none;
 }

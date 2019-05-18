@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base_logado.html' %}
 {% load staticfiles %}
 
 {% block links %}
@@ -16,7 +16,7 @@
             <div class="logoColorido">
                 <img src="/static/images/interesses/logoColorido.png" alt="">
             </div>
-            <p id="ana">Olá, Ana Laura!</p>
+            <p id="ana">Olá, {{ user.username }}!</p>
             <div class="txtAna">
                 <p id="txtAna">Agora precisamos conhecer você melhor. Selecione algumas categorias de rolê para começar.</p>
             </div>

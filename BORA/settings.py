@@ -135,5 +135,6 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 
 #Redirecionamento Login/Logout
+LOGIN_URL = 'user:login'
 LOGIN_REDIRECT_URL = 'role:user_interests'
-LOGOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'user:login'
