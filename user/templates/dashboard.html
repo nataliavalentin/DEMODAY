@@ -3,27 +3,29 @@
 {% load staticfiles %}
 {% block links %}
 <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 {% endblock %}
 {% block content %} 
 <section>
-        <div class="txt1">
-            <h3>Olá, {{ user.first_name }} {{ user.last_name }}!</h3>
-            <p>Aqui estão suas informções pessoais e interesses.</p>            
-        </div>
-        <div class="txt2">                
-            <img src="{% static '/images/sugestoes/place.png' %}" alt="">
-            <article>
-                <h3>Sua localização agora:</h3>
-                <p>Estação Hack - Trianon Masp</p>
-            </article>             
-        </div>
-        <ul>
-            <h3>Interesses</h3>  
+    <div id="dashDados">
+        <h2>Ei, {{ user.first_name }} {{ user.last_name }}!</h2>
+        <h4>Aqui estão suas informções pessoais e interesses.</h4>  
+        <p>E-mail: {{ user.email }}</p>
+        <h3>Interesses</h3>  
+        <ul>           
             <li>Bons Drinks</li>
             <li>Gastronomia</li>
             <li>Diversão</li>
             <li>Viagem</li>
             <li>Tecnologia</li>
-        </ul>        
+        </ul>                  
+    </div>
+    <div id="dashLocalizacao">                
+        <img src="{% static '/images/sugestoes/place.png' %}" alt="">
+        <article>
+            <h3>Sua localização agora:</h3>
+            <p>Estação Hack - Trianon Masp</p>
+        </article>             
+    </div>       
 </section>  
 {% endblock %}     

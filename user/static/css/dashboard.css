@@ -2,99 +2,67 @@ section {
     background-color: #2d2f33;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 90%;
+    width: 100%;
 }
 
-.txt1, .txt2{
-    width: 45%;
-    height: 150px;
+#dashDados{
+    height: 80%;
+    width: 40%;
     background-color: #57585b;
-    margin: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-article{
-    font-family: 'Segoe UI';
-    color: white;
-    height: 130px;
-}
-
-article p{
-    font-size: 10pt;
-}
-
-#img{
-    width: 110px;
-    height: 110px;
-}
-
-button{
-    width: 120px;
-    height: 40px;
     border-radius: 20px;
-    border: none;
+    font-family: 'Raleway', sans-serif;
     color:white;
-    background-color: #ee3f60;
+} 
+
+
+#dashDados h2, h3{
+    font-size: 20pt;
+    margin-left: 20px;
 }
 
-.charme{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+#dashDados h3 {
+    color:#ee3f60;
+}
+#dashDados h4{
+    font-size: 14pt;
+    margin-left: 20px;
 }
 
-.feiraGastronomica{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#dashDados p{
+    margin-left: 20px;
 }
 
-.txt1{
+
+#dashDados ul li{
+    list-style-type: none;
+}
+
+#dashLocalizacao{
+    height: 80%;
+    width: 40%;  
+    background-color: #57585b;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    color:white;
     display: flex;
     flex-direction: column;
-    color: white;
-    font-family: 'Segoe UI';
-    align-items: flex-start;
     justify-content: center;
-}
-
-.txt1 p{
-    margin: 0;
-}
-
-.txt1 h3{
-    margin: 0;
-}
-
-.txt2{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-family: 'Segoe UI';
-    justify-content: flex-start;
     align-items: center;
 }
 
-.txt2 img{
-    padding-right: 10px;
+#dashLocalizacao img{
+    width: 70px;
 }
 
-.txt2 p{
-    margin: 0;
+#dashLocalizacao article h3{
+    font-size: 20pt;
 }
 
-.txt2 h3{
-    margin: 0;
-}
-
-.txt2 article{
-    height: 40px;
+#dashLocalizacao article p{
+    font-size: 14pt;
+    text-align: center;
 }
 
 /* Tamanho Tablet */

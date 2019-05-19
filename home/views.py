@@ -44,3 +44,6 @@ def contato(request):
             send_mail(assunto, texto, email, ['projetobora.contato@gmail.com'])
 
     return render(request, 'contato.html', contexto)
+
+def notFound(request):
+    return render(request, 'erro.html')
