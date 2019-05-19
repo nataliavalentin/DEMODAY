@@ -17,7 +17,7 @@ class Role(models.Model):
     horario_role = models.TimeField(auto_now = False, auto_now_add = False)
 
 class TiposRole(models.Model):
-    role_genres = (
+    role_genres = [
         ('1', 'Tecnologia'),
         ('2', 'Diversão'),
         ('3', 'Fotografia'),
@@ -26,5 +26,5 @@ class TiposRole(models.Model):
         ('6', 'Música'),
         ('7', 'Moda'),
         ('8', 'Viagem')
-    )
+    ]
     choices = MultiSelectField(choices=role_genres)

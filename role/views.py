@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
-from role.forms import RoleForm
+from role.forms import RoleForm, RoleGenreForm
 from role.models import Role
 
 # Create your views here.
@@ -34,8 +34,8 @@ def save_interests(request):
     if formulario.is_valid():
         formulario.save()
         formulario = RoleGenreForm()
-        msg = 'Cadastro reaPedidoFormlizado com sucesso'
-
+        msg = 'Cadastro realizado com sucesso!'
+    
     contexto = {
         'form' : formulario,
         'msg' : msg,
