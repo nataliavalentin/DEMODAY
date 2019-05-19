@@ -26,23 +26,31 @@
                         </a>
                     </li>
                     <li>
-                       <a href="#comoFunciona">
-                            Como Funciona
-                        </a>
+                        <div id="tamanho">
+                            <a id="cFunciona" href="#comoFunciona">
+                                Como Funciona
+                            </a>
+                        </div> 
                     </li>
                     <li>
-                        <a href="#inscreverSe">
-                            Inscrever-se
-                        </a>
+                        <div id="tamanho">
+                            <a id="inscrever" href="#inscreverSe">
+                                Inscrever-se
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#footerLinks">
-                            Contato
-                        </a>
+                        <div id="tamanho">
+                            <a id="contato" href="#footerLinks">
+                                Contato
+                            </a>
+                        </div>
                     </li>
                     <li>
                         <article id="login">
-                            <a href="{%url 'user:login' %}">Entrar</a>
+                            <div id="tamanhoBotao">
+                                <a id="botaologin" href="{%url 'user:login' %}">Entrar</a>
+                            </div>
                         </article>
                     </li>
                     <li class="menuHamburguer">
@@ -51,9 +59,11 @@
                 </ul>
             </nav>
         </div>
+        <div id="apresentInicial">
+            <h1 id="tituloInicial">Bora pr<span></span></h1>
+        </div>
         <main>
-            <h1>Bora pra onde hoje?</h1>
-            <input type="text" placeholder="Pesquise aqui um rolê por região">
+            
         </main>
     </header>
     {% block content %}
