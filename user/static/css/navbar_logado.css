@@ -6,6 +6,9 @@ body{
     height: 10vh;
     width: 100%;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav-logado div{
