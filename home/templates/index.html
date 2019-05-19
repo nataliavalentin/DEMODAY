@@ -37,8 +37,12 @@
     <div class="filtro">
         <div>
             <img class="boraInscreva" src="{% static '/images/logo/boraCurtirCidade.png' %}" alt="">
-            <button class="button1">CADASTRE-SE AQUI</button>
-            <button class="button2">CADASTRE-SE COM SUAS REDES SOCIAIS</button>
+            <a href="{%url 'user:reg' %}">
+                <button class="button1">CADASTRE-SE AQUI</button>
+            </a>
+            <a href="#">
+                <button class="button2">CADASTRE-SE COM SUAS REDES SOCIAIS</button>
+            </a>
         </div>
     </div>
 </section>   

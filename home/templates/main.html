@@ -9,6 +9,7 @@
     <script defer src="{% static 'js/script.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static '/images/logo/borafaviconf.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Bora!</title>
     {% block links %}{% endblock %}
@@ -42,11 +43,8 @@
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'home:contato' %}">
-                            Contato
-                        </a>
                         <div id="tamanho">
-                            <a id="contato" href="#footerLinks">
+                            <a id="contato" href="{% url 'home:contato' %}">
                                 Contato
                             </a>
                         </div>
