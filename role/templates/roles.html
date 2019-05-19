@@ -1,0 +1,10 @@
+{% extends 'base_logado.html' %}
+{% load staticfiles %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}        
+        {{ form.as_p }}
+        {{ msg }}
+        <button type="submit">Cadastrar</button> 
+    </form>
+{% endblock %}

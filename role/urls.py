@@ -7,4 +7,5 @@ app_name = 'role'
 urlpatterns = [
     path('interests/', views.user_interests, name='user_interests'),
     path('options/', views.user_options, name='user_options'),
+    path('roles/', views.user_roles, name='user_roles'),
 ]

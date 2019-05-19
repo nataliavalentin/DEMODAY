@@ -1,4 +1,3 @@
-</form>
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block links %}
@@ -11,6 +10,7 @@
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Cadastrar</button>     
+        </form>
     </article>     
 </section>
 {% endblock %}     

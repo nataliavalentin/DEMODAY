@@ -1,0 +1,36 @@
+</form>
+{% extends 'base_logado.html' %}
+{% load staticfiles %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+{% block content %}   
+<section> 
+    <article>
+        <div>
+            <h3> {{ user.first_name }} {{ user.last_name }} </h3>
+            <hr>
+        </div>
+        <div>           
+            <ul>
+                <h3>Interesses</h3>  
+                <li>Bons Drinks</li>
+                <li>Gastronomia</li>
+                <li>Diversão</li>
+                <li>Viagem</li>
+                <li>Tecnologia</li>
+            </ul>
+            <aside>
+                <h3>Localização</h3>
+                <p>Avenida Paulista</p>
+            </aside>     
+            <aside>
+                <h3>E-mail</h3>
+                <p>{{ user.email }}}</p>
+            </aside>            
+        </div>
+        <div>           
+        </div>
+    </article>       
+</section>
+{% endblock %}     

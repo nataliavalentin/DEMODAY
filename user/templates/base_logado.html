@@ -13,11 +13,14 @@
     {% block scripts %}{% endblock %}
 </head>
 <body>
-    <nav>      
+    <nav>   
+        <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">   
         <ul>         
             {% if user.is_authenticated %}    
             <li>Olá, {{ user.username }}!</li>           
-            <li><a href="{% url 'user:dashboard' %}">Painel</a></li>
+            <li><a href="{% url 'user:dashboard' %}">Meu Perfil</a></li>
+            <li><a href="{% url 'role:user_roles' %}">Criar Rolê</a></li>
+            <li><a href="{% url 'role:user_options' %}">Rolês</a></li>
             <li><a href="{% url 'user:logout' %}">Sair</a></li>
             {% else %}
             <li><a href="{% url 'home:index' %}">Home</a></li>

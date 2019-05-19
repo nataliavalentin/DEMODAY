@@ -6,13 +6,15 @@ from user.forms import UserForm
 from user.models import User
 from django.conf import settings
 from .forms import RegisterForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def login(request):
     return render(request, 'login.html')
 
+@login_required
 def dashboard(request):
-    template_name = 'user/dashboard.html'
+    template_name = 'dashboard.html'
     return render(request, template_name)
     
 def register(request):
@@ -34,8 +36,10 @@ def registerUser(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect(settings.LOGIN_URL)
+            user = form.save()
+            user = authenticate(
+                username = user.username, password=form.cleaned_data['password1'])
+            return redirect(settings.LOGIN_REDIRECT_URL)
     else:
         form = RegisterForm()
     context = {
