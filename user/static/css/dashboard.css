@@ -1,71 +1,100 @@
-
-article{
-    background-color: white;
-    width: 72%;
-    height: 90%; 
-    border-radius: 3px; 
-    border: 1px solid rgba(0,0,0,.12)!important;
-    border-bottom: 1px solid 
-}
-
-article div:nth-child(1) h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: 20pt;
-    margin-bottom: 0;
-    color: rgba(3, 3, 3, 0.822);
-    padding-left: 12px;
-}
-
-article div:nth-child(1) hr{
-    width: 97%;
-}
-
-article div:nth-child(2){
-    display: flex;
-    justify-content: space-between;
-    width: 60%
-}
-
-article div:nth-child(2) aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-article div:nth-child(2) aside p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 10pt; 
-    margin:0; 
-}
-
-article div:nth-child(2) aside h3{
-    font-family: 'Raleway', sans-serif;
-    color: rgba(32, 29, 29, 0.822);
-    margin-top:0;  
-}
-
-article div:nth-child(2) ul{
-    font-family: 'Raleway', sans-serif;
-    margin:0;
-}
-
-article div:nth-child(2) ul h3{
-    font-family: 'Raleway', sans-serif;
-    color: rgba(32, 29, 29, 0.822);
-    margin-top:0;
-}
-
-article div:nth-child(2) li{
-    list-style-type: none;
-    font-size: 10pt;
-}
-
 section {    
-    background-color: rgba(241, 245, 245, 0.822); 
+    background-color: #2d2f33;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90%;
+}
+
+.txt1, .txt2{
+    width: 45%;
+    height: 150px;
+    background-color: #57585b;
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article{
+    font-family: 'Segoe UI';
+    color: white;
+    height: 130px;
+}
+
+article p{
+    font-size: 10pt;
+}
+
+#img{
+    width: 110px;
+    height: 110px;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color:white;
+    background-color: #ee3f60;
+}
+
+.charme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feiraGastronomica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.txt1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Segoe UI';
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.txt1 p{
+    margin: 0;
+}
+
+.txt1 h3{
+    margin: 0;
+}
+
+.txt2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Segoe UI';
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.txt2 img{
+    padding-right: 10px;
+}
+
+.txt2 p{
+    margin: 0;
+}
+
+.txt2 h3{
+    margin: 0;
+}
+
+.txt2 article{
+    height: 40px;
 }
 
 /* Tamanho Tablet */

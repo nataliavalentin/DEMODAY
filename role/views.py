@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import login, logout, authenticate
 from role.forms import RoleForm
 from role.models import Role
 
