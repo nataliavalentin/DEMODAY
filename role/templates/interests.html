@@ -29,7 +29,17 @@
                     <button>BORA</button>
                 </a>
             </div>
-        </article>
+        </div>
+        <form method='POST'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type='submit'>Cadastrar</button>
+            {% if msg %}
+                <h2>{{ msg }}</h2>
+            {% endif %}
+        </form></article>
+        <!-- <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
+        
         <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
         <div class="fotografia" onclick="createRoleList(2);"><p>FOTOGRAFIA</p></div>
         <div class="moda" onclick="createRoleList(3);"><p>MODA</p></div>
@@ -37,6 +47,6 @@
         <div class="gastronomia" onclick="createRoleList(5);"><p>GASTRONOMIA</p></div>
         <div class="diversao" onclick="createRoleList(6);"><p>DIVERSÃO</p></div>
         <div class="tecnologia" onclick="createRoleList(7);"><p>TECNOLOGIA</p></div>
-        <div class="bonsDrinks" onclick="createRoleList(8);"><p>BONS DRINKS</p></div>
+        <div class="bonsDrinks" onclick="createRoleList(8);"><p>BONS DRINKS</p></div> -->
     </section>
 {% endblock %}

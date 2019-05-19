@@ -27,3 +27,17 @@ def user_roles(request):
         'msg':msg,
     }
     return render(request, "roles.html", context)
+
+def save_interests(request):
+    formulario = RoleGenreForm(request.POST or None)
+    msg = ''
+    if formulario.is_valid():
+        formulario.save()
+        formulario = RoleGenreForm()
+        msg = 'Cadastro reaPedidoFormlizado com sucesso'
+
+    contexto = {
+        'form' : formulario,
+        'msg' : msg,
+    }
+    return render(request, 'interests.html', contexto)
