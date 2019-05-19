@@ -13,8 +13,10 @@
     {% block scripts %}{% endblock %}
 </head>
 <body>
-    <nav>   
-        <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">   
+    <nav id = "nav-logado"> 
+        <div>
+            <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">   
+        </div>       
         <ul>         
             {% if user.is_authenticated %}    
             <li>Olá, {{ user.username }}!</li>           
