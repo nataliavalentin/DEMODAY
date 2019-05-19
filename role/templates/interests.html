@@ -30,6 +30,7 @@
                 </a>
             </div>
         </div>
+    </article>
         <form method='POST'>
             {% csrf_token %}
             {{ form.as_p }}
@@ -37,7 +38,7 @@
             {% if msg %}
                 <h2>{{ msg }}</h2>
             {% endif %}
-        </form></article>
+        </form>
         <!-- <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
         
         <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
