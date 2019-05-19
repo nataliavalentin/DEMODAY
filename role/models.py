@@ -15,3 +15,4 @@ class Role(models.Model):
     tipos_role = models.CharField(max_length=50, choices=opcoes_role)
     data_role = models.DateField()
     horario_role = models.TimeField(auto_now = False, auto_now_add = False)
+

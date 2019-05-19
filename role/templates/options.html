@@ -5,29 +5,82 @@
 <link rel="stylesheet" href="{% static 'css/options.css' %}"> 
 {% endblock %}
 {% block scripts %}
-    <script defer src="{% static 'js/options.js' %}"></script>
+<script defer src="{% static 'js/options.js' %}"></script>
 {% endblock %}
 {% block content %}
 <body>
     <section>
-            <div class="txt1"><p>txt1</p></div>
-            <div class="txt2"><p>txt2</p></div>
-
-            <div class="paulista">
-                <img id="paulistaImg" src="{% static '/images/sugestoes/paulistaBurger.png' %}" alt="">
-                <article>
-                    <h3>Paulista Burger</h3>
-                    <p>R. Augusta, 1499 - Consolação, - São Paulo - SP</p>
-                    <img src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-                </article>
-                <button>Ver Sugestão</button>
-            </div>
-
-            <div class="masp"><p>MASP</p></div>
-            <div class="charme"><p>Chame da Paulista</p></div>
-            <div class="feiraGastronomica"><p>>Feira Gastronômica</p></div>
-            <div class="casaDasRosas"><p>Casa das Rosas</p></div>
-            <div class="feimi"><p>Feimi - Feira da Moda Inverno</p></div>
+        <div class="txt1">
+            <h3>Olá, {{ user.username }}!</h3>
+            <p>Dá uma olhadinha nos rolês que estão acontecendo perto de você!</p>            
+        </div>
+        <div class="txt2">                
+            <img src="{% static '/images/sugestoes/place.png' %}" alt="">
+            <article>
+                <h3>Sua localização agora:</h3>
+                <p>Estação Hack - Trianon Masp</p>
+            </article>             
+        </div>
+        
+        <div class="paulista">
+            <img id="img" src="{% static '/images/sugestoes/paulistaBurger.png' %}" alt="">
+            <article>
+                <h3>Paulista Burger</h3>
+                <p>R. Augusta, 1499 - Consolação, - São Paulo - SP</p>
+                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+            </article>
+            <button>Ver Sugestão</button>
+        </div>
+        
+        <div class="masp">
+            <img id="img" src="{% static '/images/sugestoes/masp.png' %}" alt="">
+            <article>
+                <h3>Paulista Burger</h3>
+                <p>Av. Paulista, 1578 - Bela Vista, São Paulo - SP</p>
+                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+            </article>
+            <button>Ver Sugestão</button>
+        </div>
+        
+        <div class="charme">
+            <img id="img" src="{% static '/images/sugestoes/charmePaulista.png' %}" alt="">
+            <article>
+                <h3>Charme das Paulista</h3>
+                <p>Av. Paulista, 1499 -  Bela Vista, São Paulo - SP</p>
+                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+            </article>
+            <button>Ver Sugestão</button>
+        </div>
+        
+        <div class="feiraGastronomica">
+            <img id="img" src="{% static '/images/sugestoes/feiraGastronomica.png' %}" alt="">
+            <article>
+                <h3>Feira Gastronômica</h3>
+                <p>Al. Rio Claro, 276 - Bela Vista - São Paulo - SP</p>
+                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+            </article>
+            <button>Ver Sugestão</button>
+        </div>
+        
+        <div class="casaDasRosas">
+            <img id="img" src="{% static '/images/sugestoes/casaDasRosas.png' %}" alt="">
+            <article>
+                <h3>Casa das Rosas</h3>
+                <p>Av. Paulista, 37 - Bela Vista - São Paulo - SP</p>
+                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+            </article>
+            <button>Ver Sugestão</button>
+        </div>
+        
+        <div class="feimi">
+            <img id="img" src="{% static '/images/sugestoes/feiraFeimi.png' %}" alt="">
+            <article>
+                <h3>Feimi - Feira da Moda Inverno</h3>
+                <p>Rua Luis Coelho, 323 - Metrô Consolação - SP</p>
+                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+            </article>
+            <button>Ver Sugestão</button>
+        </div>
     </section>
 </body>
 {% endblock %}

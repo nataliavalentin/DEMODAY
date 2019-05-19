@@ -239,6 +239,16 @@ button{
     justify-content: center;
 }
 
+.botao2{
+    padding-top: 30px;
+    display: none;
+    justify-content: center;
+}
+
+.verBotao {
+    display: flex;
+}
+
 /* Tamanho Tablet */
 @media(max-width:981px){
     section div{
