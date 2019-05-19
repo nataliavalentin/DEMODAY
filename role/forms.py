@@ -1,5 +1,5 @@
 from django import forms
-from .models import Role
+from .models import Role, TiposRole
 
 class RoleForm(forms.ModelForm):
     class Meta:
@@ -12,3 +12,10 @@ class RoleForm(forms.ModelForm):
         self.fields['tipos_role'].label = "Tipo"
         self.fields['data_role'].label = "Data"
         self.fields['horario_role'].label = "Horário"
+
+class RoleGenreForm(forms.ModelForm):
+    class Meta:
+        model = TiposRole
+        fields = [
+            'choices',
+        ]

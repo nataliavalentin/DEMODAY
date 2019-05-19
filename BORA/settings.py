@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'user',
     'role',
     'establishment',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
