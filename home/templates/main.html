@@ -75,8 +75,8 @@
         <div id="footerLinks">
             <img id="bora" src="{% static '/images/logo/bora.png' %}" alt="">
             <div id="links">
-            <a href="">Termos e Privacidade</a>
-            <a href="">Contato</a>
+            <a href="{% url 'home:notfound' %}">Termos e Privacidade</a>
+            <a href="{% url 'home:contato' %}">Contato</a>
             <p id="copyright">© 2019 Bora Rolês Ltda</p>
             </div>
             <div id="redesSocias">
