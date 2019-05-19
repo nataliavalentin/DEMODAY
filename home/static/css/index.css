@@ -44,6 +44,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     background-image: url("/static/images/home/header.png");
+    background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Raleway', sans-serif;
 }
@@ -88,17 +89,70 @@ header div nav article {
     color: white;
 }
 
-header main {
+#tamanho {
+    width: 200px;
+}
+
+#tamanhoBotao {
+    width: 80px;
+}
+
+#cFunciona:hover {
+    font-size: 20px;
+}
+
+#inscrever:hover {
+    font-size: 20px;
+}
+
+#contato:hover {
+    font-size: 20px;
+}
+
+#botaologin:hover {
+    font-size: 18px;
+}
+
+#apresentInicial {
+    margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-header main h1 {
-    font-size: 48pt;
+#tituloInicial {
+    font-size: 58pt;
     color: white;
     letter-spacing: -3px;
     margin: 5px;
+    animation: alternate;
+}
+
+span:before {
+    content: 'a onde hoje?';
+    animation: animate infinite 10s;
+    animation-delay: 2s;
+}
+
+@keyframes animate {
+    20%{ content: 'a onde hoje?' }
+    30%{ content: 'o bar?' }
+    50%{ content: 'o restaurante?' }
+    75%{ content: 'o teatro?' }
+    100%{ content: 'a onde você quiser!' }
+}
+
+#fraseInicial {
+    margin: 0;
+    color: white;
+    font-size: 18pt;
+}
+
+#sublinhado {
+    width: 45%;
+    height: 7px;
+    background-color: #ff1742;
 }
 
 header main input {
@@ -258,7 +312,7 @@ section img{
 .button1 {
     padding: 0.8em 0em;
     width: 500px;
-    background: #0077ff;
+    background: #ff1742;
     border-radius: 50px;
     border: 0;
     color:#fff;
@@ -273,7 +327,7 @@ section img{
 .button2 {
     padding: 0.8em 0em;
     width: 500px;
-    background: #f80000;
+    background: #0b68ff;
     border-radius: 50px;
     border: 0;
     color:#fff;
@@ -418,18 +472,46 @@ font-size: 8pt;
     
     header nav {
         display: flex;
+        height: 20vh;
         align-items: center;
         justify-content: space-around;
-        padding: 10px;
+        
     }
     
     header nav ul {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    #tamanho {
+        width: 100px;
+        display: flex;
         align-items: flex-end;
     }
     
+    #tamanhoBotao {
+        width: 50px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #cFunciona:hover {
+        font-size: 16px;
+    }
+
+    #inscrever:hover {
+        font-size: 16px;
+    }
+
+    #contato:hover {
+        font-size: 16px;
+    }
+
+    #botaologin:hover {
+        font-size: 16px;
+    }
+
     header nav ul li {
         padding: 5px 0px 5px 0px;
     }
@@ -543,20 +625,10 @@ font-size: 8pt;
         background-image: url("/static/images/home/headerMobile.png");
     }
     
-    header main {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
+    #tituloInicial {
+        font-size: 32pt;
     }
-    
-    header main h1 {
-        font-size: 35pt;
-    }  
-    
-    header main input {
-        width: 90%;
-    }  
+     
     
     #comoFunciona div {
         width: 100%;
