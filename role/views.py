@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
-from role.forms import RoleForm
+from role.forms import RoleForm, RoleGenreForm
 from role.models import Role
 
 # Create your views here.
