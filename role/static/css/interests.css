@@ -41,6 +41,14 @@ section{
     justify-content: space-around;
 }
 
+
+section article{
+    background-color: white;
+    width: 25%;
+    height: 283px; 
+    display: flex;
+}
+
 section div{
     background-color: white;
     width: 25%;
