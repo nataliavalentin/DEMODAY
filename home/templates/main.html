@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Bora!</title>
+    {% block links %}{% endblock %}
+	{% block scripts %}{% endblock %}
 </head>
 <body>
     <header>
@@ -26,23 +28,34 @@
                         </a>
                     </li>
                     <li>
-                       <a href="#comoFunciona">
-                            Como Funciona
-                        </a>
+                        <div id="tamanho">
+                            <a id="cFunciona" href="#comoFunciona">
+                                Como Funciona
+                            </a>
+                        </div> 
                     </li>
                     <li>
-                        <a href="#inscreverSe">
-                            Inscrever-se
-                        </a>
+                        <div id="tamanho">
+                            <a id="inscrever" href="#inscreverSe">
+                                Inscrever-se
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#footerLinks">
+                        <a href="{% url 'home:contato' %}">
                             Contato
                         </a>
+                        <div id="tamanho">
+                            <a id="contato" href="#footerLinks">
+                                Contato
+                            </a>
+                        </div>
                     </li>
                     <li>
                         <article id="login">
-                            <a href="{%url 'user:login' %}">Entrar</a>
+                            <div id="tamanhoBotao">
+                                <a id="botaologin" href="{%url 'user:login' %}">Entrar</a>
+                            </div>
                         </article>
                     </li>
                     <li class="menuHamburguer">
@@ -51,9 +64,11 @@
                 </ul>
             </nav>
         </div>
+        <div id="apresentInicial">
+            <h1 id="tituloInicial">Bora pr<span></span></h1>
+        </div>
         <main>
-            <h1>Bora pra onde hoje?</h1>
-            <input type="text" placeholder="Pesquise aqui um rolê por região">
+            
         </main>
     </header>
     {% block content %}
