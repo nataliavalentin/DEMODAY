@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
 from role.forms import RoleForm, RoleGenreForm
 from role.models import Role
+from establishment.models import Establishment
 
 # Create your views here.
 @login_required
@@ -11,7 +12,9 @@ def user_interests(request):
 
 @login_required
 def user_options(request):
-    return render (request, 'options.html')
+    lista = Establishment.objects.all()
+    context = {'lista': lista}
+    return render (request, 'options.html', context)
 
 @login_required
 def user_roles(request):
@@ -34,8 +37,8 @@ def save_interests(request):
     if formulario.is_valid():
         formulario.save()
         formulario = RoleGenreForm()
-        msg = 'Cadastro reaPedidoFormlizado com sucesso'
-
+        msg = 'Cadastro realizado com sucesso!'
+    
     contexto = {
         'form' : formulario,
         'msg' : msg,

@@ -9,6 +9,7 @@
     <script defer src="{% static 'js/script.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static '/images/logo/borafaviconf.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Bora!</title>
     {% block links %}{% endblock %}
@@ -42,12 +43,16 @@
                         </div>
                     </li>
                     <li>
-                        <a href="{% url 'home:contato' %}">
-                            Contato
-                        </a>
                         <div id="tamanho">
-                            <a id="contato" href="#footerLinks">
+                            <a id="contato" href="{% url 'home:contato' %}">
                                 Contato
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="tamanho">
+                            <a id="sobre" href="#">
+                                Sobre nós
                             </a>
                         </div>
                     </li>
@@ -77,8 +82,8 @@
         <div id="footerLinks">
             <img id="bora" src="{% static '/images/logo/bora.png' %}" alt="">
             <div id="links">
-            <a href="">Termos e Privacidade</a>
-            <a href="">Contato</a>
+            <a href="{% url 'home:notfound' %}">Termos e Privacidade</a>
+            <a href="{% url 'home:contato' %}">Contato</a>
             <p id="copyright">© 2019 Bora Rolês Ltda</p>
             </div>
             <div id="redesSocias">

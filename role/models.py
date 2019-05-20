@@ -1,6 +1,7 @@
 from django.db import models
 from establishment.models import Establishment
 from multiselectfield import MultiSelectField
+
 # Create your models here.
 class Role(models.Model):
     opcoes_role = [
