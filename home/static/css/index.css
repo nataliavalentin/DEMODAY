@@ -143,12 +143,6 @@ span:before {
     100%{ content: 'a onde você quiser!' }
 }
 
-#fraseInicial {
-    margin: 0;
-    color: white;
-    font-size: 18pt;
-}
-
 #sublinhado {
     width: 45%;
     height: 7px;
@@ -451,6 +445,10 @@ font-size: 8pt;
     
     .aparecerBotao {
         display: flex !important;
+    }
+
+    #tituloInicial {
+        font-size: 44pt;
     }
     
     .menuHamburguer {
