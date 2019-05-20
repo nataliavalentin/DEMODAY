@@ -16,7 +16,6 @@ section {
     color:white;
 } 
 
-
 #dashDados h2, h3{
     font-size: 20pt;
     margin-left: 20px;
@@ -25,15 +24,16 @@ section {
 #dashDados h3 {
     color:#ee3f60;
 }
+
 #dashDados h4{
     font-size: 14pt;
     margin-left: 20px;
+    width: 80%;
 }
 
 #dashDados p{
     margin-left: 20px;
 }
-
 
 #dashDados ul li{
     list-style-type: none;
@@ -67,10 +67,75 @@ section {
 
 /* Tamanho Tablet */
 @media(max-width:768px){ 
+    #dashDados, #dashLocalizacao{
+        height: 46%;
+        width: 80%;  
+    }
 
+    #dashDados h2{
+        display: none;
+    }
+
+    #dashDados h3{
+        font-size: 12pt;
+        margin: 0px 0px 0px 20px;
+    }
+
+    #dashDados h4{
+        font-size: 12pt;
+    }
+  
+    #dashDados p{
+        margin: 8px 0 8px 20px;
+    }
+
+    #dashDados ul{
+        font-size: 10pt;
+        margin-top:2px;
+        padding-left: 20px;
+    }
+
+    #dashDados ul li{
+        font-size: 10pt;
+    }
+
+    #dashLocalizacao img{
+        width: 55px;
+    }
+
+    section{
+        flex-direction: column;
+    }
 }
 
 /* Tamanho Smartphone */
 @media(max-width:425px){
-  
+    #dashDados h4{
+        text-align: center;
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+
+    #dashDados p{
+        text-align: center;
+        margin: 8px 0 8px 0px;
+        font-size: 80%;
+        width: 100%;
+    }
+
+    #dashLocalizacao img{
+        width: 40px;
+    }
+
+    #dashLocalizacao article h3{
+        font-size: 14pt;
+        width: 100%;
+        margin: 8px 0 4px 0; 
+        text-align: center;
+    }
+
+    #dashLocalizacao article p{
+        font-size:12pt;
+        margin: 8px 0 4px 0; 
+    }
 }

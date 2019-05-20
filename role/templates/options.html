@@ -21,66 +21,17 @@
                 <p>Estação Hack - Trianon Masp</p>
             </article>             
         </div>
-        
+        {% for item in lista %}
         <div class="paulista">
-            <img id="img" src="{% static '/images/sugestoes/paulistaBurger.png' %}" alt="">
+            <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
             <article>
-                <h3>Paulista Burger</h3>
-                <p>R. Augusta, 1499 - Consolação, - São Paulo - SP</p>
+                <h3>{{ item.es_name }}</h3>
+                <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
                 <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
             </article>
             <button>Ver Sugestão</button>
-        </div>
-        
-        <div class="masp">
-            <img id="img" src="{% static '/images/sugestoes/masp.png' %}" alt="">
-            <article>
-                <h3>Paulista Burger</h3>
-                <p>Av. Paulista, 1578 - Bela Vista, São Paulo - SP</p>
-                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-            </article>
-            <button>Ver Sugestão</button>
-        </div>
-        
-        <div class="charme">
-            <img id="img" src="{% static '/images/sugestoes/charmePaulista.png' %}" alt="">
-            <article>
-                <h3>Charme das Paulista</h3>
-                <p>Av. Paulista, 1499 -  Bela Vista, São Paulo - SP</p>
-                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-            </article>
-            <button>Ver Sugestão</button>
-        </div>
-        
-        <div class="feiraGastronomica">
-            <img id="img" src="{% static '/images/sugestoes/feiraGastronomica.png' %}" alt="">
-            <article>
-                <h3>Feira Gastronômica</h3>
-                <p>Al. Rio Claro, 276 - Bela Vista - São Paulo - SP</p>
-                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-            </article>
-            <button>Ver Sugestão</button>
-        </div>
-        
-        <div class="casaDasRosas">
-            <img id="img" src="{% static '/images/sugestoes/casaDasRosas.png' %}" alt="">
-            <article>
-                <h3>Casa das Rosas</h3>
-                <p>Av. Paulista, 37 - Bela Vista - São Paulo - SP</p>
-                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-            </article>
-            <button>Ver Sugestão</button>
-        </div>
-        
-        <div class="feimi">
-            <img id="img" src="{% static '/images/sugestoes/feiraFeimi.png' %}" alt="">
-            <article>
-                <h3>Feimi - Feira da Moda Inverno</h3>
-                <p>Rua Luis Coelho, 323 - Metrô Consolação - SP</p>
-                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-            </article>
-            <button>Ver Sugestão</button>
-        </div>
+        </div>            
+        {% endfor %}       
     </section>
 </body>
 {% endblock %}

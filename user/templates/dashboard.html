@@ -9,15 +9,13 @@
 <section>
     <div id="dashDados">
         <h2>Ei, {{ user.first_name }} {{ user.last_name }}!</h2>
-        <h4>Aqui estão suas informções pessoais e interesses.</h4>  
+        <h4>Aqui estão seus dados pessoais e interesses.</h4>  
         <p>E-mail: {{ user.email }}</p>
-        <h3>Interesses</h3>  
-        <ul>           
-            <li>Bons Drinks</li>
-            <li>Gastronomia</li>
-            <li>Diversão</li>
-            <li>Viagem</li>
-            <li>Tecnologia</li>
+        <h3>Interesses</h3>
+        <ul>        
+        {% for tipo in tipos_role %}
+            <li>tipo</li>
+        {% endfor %}      
         </ul>                  
     </div>
     <div id="dashLocalizacao">                
