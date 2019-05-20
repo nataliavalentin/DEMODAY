@@ -6,6 +6,9 @@ from .forms import ContatoForm
 def home(request):
     return render (request, 'index.html')
 
+def sobre(request):
+    return render (request, 'sobre.html')
+
 def contato(request):
     formulario = ContatoForm(request.POST or None)
     msg = ''

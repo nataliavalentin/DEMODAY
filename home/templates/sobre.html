@@ -1,49 +1,134 @@
-{% extends 'main.html' %}
 {% load staticfiles %}  
-{% block content %}   
-<aside>
-    <img src="{% static '/images/comoFunciona/comoFunciona_ilustra.png' %}" alt="cadastre-se">      
-</aside>
-<article id="comoFunciona">
-    <div>
-        <h2>Como funciona?</h2>
-        <h3>            
-            O BORA trás os melhores rolês pra você!
-        </h3>               
-        <p>
-            Você pode realizar buscas por local ou região
-            de acordo com os seus interesses.
-            Assim, fica mais fácil descobrir qual o rolê mais próximo
-            para se encontrar com a galera e conhecer gente nova.
-            Ta afim de novas aventuras e histórias pra contar? BORA!
-        </p>        
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/sobre.css' %}">
+    <script defer src="{% static 'js/sobre.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static '/images/logo/borafaviconf.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Bora!</title>
+    {% block links %}{% endblock %}
+	{% block scripts %}{% endblock %}
+</head>
+<body>
+    <header>
         <div>
-            <div>           
-                <img src="{% static '/images/comoFunciona/comoFunciona_cadastre.png' %}" alt="cadastre-se">            
-                <p>Cadastre-se</p>
-            </div>
-            <div>            
-                <img src="{% static '/images/comoFunciona/comoFunciona_localizacao.png' %}" alt="Ative sua localização">           
-                <p>Ative sua localização</p>         
-            </div>   
-            <div>            
-                <img src="{% static '/images/comoFunciona/comoFunciona_partiu.png' %}" alt="Escolha o Rolê">          
-                <p>Escolha um rolê</p>
-            </div>            
-        </div>      
-    </div>
-</article>
-<section id="inscreverSe">
-    <div class="filtro">
-        <div>
-            <img class="boraInscreva" src="{% static '/images/logo/boraCurtirCidade.png' %}" alt="">
-            <a href="{%url 'user:reg' %}">
-                <button class="button1">CADASTRE-SE AQUI</button>
-            </a>
-            <a href="{% url 'home:notfound' %}">
-                <button class="button2">CADASTRE-SE COM SUAS REDES SOCIAIS</button>
-            </a>
+            <nav>
+                <a href="#" id="logoMobile">
+                    <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">
+                </a>
+                <ul>
+                    <li>
+                        <a href=#>
+                            <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">
+                        </a>
+                    </li>
+                    <li>
+                        <div id="tamanho">
+                            <a id="cFunciona" href="#comoFunciona">
+                                Como Funciona
+                            </a>
+                        </div> 
+                    </li>
+                    <li>
+                        <div id="tamanho">
+                            <a id="inscrever" href="#inscreverSe">
+                                Inscrever-se
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="tamanho">
+                            <a id="contato" href="{% url 'home:contato' %}">
+                                Contato
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="tamanho">
+                            <a id="sobre" href="{% url 'home:sobre' %}">
+                                Sobre nós
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <article id="login">
+                            <div id="tamanhoBotao">
+                                <a id="botaologin" href="{%url 'user:login' %}">Entrar</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="menuHamburguer">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</section>   
-{% endblock %}
+    </header>
+    <section id="principalSobre">
+            <div>
+                <h4 class="titulo">Quem somos</h4>
+            </div>
+            <div class="a-gente"> 
+                <div> 
+                    <img class="circle" src="images/nat.jpg"> 
+                    <h4>Carlos Vitor</h4>
+                   <h5>18 anos</h5>
+                    <p>Estudante de Sistema de Informação. Ativista no Instituto Emp  com programação de site e aplicativo.
+                    </p>
+                </div>
+                <div> 
+                    <img class="circle" src="images/jes.jpeg"> 
+                    <h4>Leandro </h4>
+                   <h5>19 anos</h5>
+                    <p>Profissional de Administração Empresarial e estudante do curso de Meio Ambiente. Ativista no Instituto Emp com criação de conteúdo e revisão.</p>
+                </div>
+                <div> 
+                    <img class="circle" src="images/vit.jpg"> 
+                    <h4>Natalia V</h4>
+                   <h5>22 anos</h5>
+                    <p>Profissional da área de Empreendedorismo e estudante de Direito. Ativista no Instituto Emp com análise de produtos.</p>
+                </div>
+                <div> 
+                    <img class="circle" src="images/sab.jpg"> 
+                    <h4>Nathalia Spinula</h4>
+                    <h5>22 anos</h5>
+                     <p>Profissional de Publicidade e Propaganda. Ativista no Instituto Emp com programação de site, desenvolvimento publicitário e chocolatra.</p>
+                </div>
+                <div> 
+                    <img  class="circle" src="../static/images/sobre/matheus7.png"> 
+                   <h4>Matheus Mastrocinque Silva</h4>
+                   <h5>21 anos</h5>
+                    <p>Desenvolvedor Web e Estudante de Análise e Desenvolvimento de Sistemas - Apaixonado por tecnologia e cerveja.</p>
+                </div>
+            </div>
+    </section>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div id="footerLinks">
+            <img id="bora" src="{% static '/images/logo/bora.png' %}" alt="">
+            <div id="links">
+            <a href="{% url 'home:notfound' %}">Termos e Privacidade</a>
+            <a href="{% url 'home:contato' %}">Contato</a>
+            <p id="copyright">© 2019 Bora Rolês Ltda</p>
+            </div>
+            <div id="redesSocias">
+                    <div id="icons">  
+                        <div class="image"><a href=""><img src="{% static '/images/footer/facebook.png' %}" alt=""></a></div>
+                        <div class="image"><a href=""><img src="{% static '/images/footer/linkedin.png' %}" alt=""></a></div>
+                        <div class="image"><a href=""><img src="{% static '/images/footer/twitter.png' %}" alt=""></a></div>
+                        <div class="image"><a href=""><img src="{% static '/images/footer/instagram.png' %}" alt=""></a></div>
+                    </div>
+            <p>Redes Socias</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

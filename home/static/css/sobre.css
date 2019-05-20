@@ -1,0 +1,465 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'section section'
+    'footer footer';
+    grid-template-rows: 0vh 80vh 30vh;
+    grid-template-columns: 49vw 49.7vw;   
+}
+
+/* Header (nav) */
+
+.menuHamburguer {
+    display: none;
+}
+
+.menuFixo {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+}
+
+.botaoFixo {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: #f26e57;
+    border: white solid 2px;
+    color: white;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+}
+
+header div {
+    padding: 0px 12px 0px 0px;
+}
+
+header .fa-bars {
+    color: white;
+}
+
+#logoMobile {  
+    display: none;
+}
+
+header a img {  
+    width: 115px;
+}
+
+header nav ul {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    font-size: 20px;
+}
+
+header div nav article {
+    padding: 10px;
+    text-align: center;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+    color: white;
+}
+
+#botaologin:hover {
+    font-size: 18px;
+}
+
+#cFunciona:hover {
+    font-size: 20px;
+}
+
+#contato:hover {
+    font-size: 20px;
+}
+
+#inscrever:hover {
+    font-size: 20px;
+}
+
+#sobre:hover {
+    font-size: 20px;
+}
+
+#tamanho {
+    width: 200px;
+}
+
+#tamanhoBotao {
+    width: 80px;
+}
+
+/* INICIO DO SOBRE */
+
+.descricao {
+    text-align: center;
+    padding: 13px;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+    overflow: hidden;
+    position: relative;
+  }
+    
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+  }
+
+  .participar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .titulo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  
+  .participe-texto {
+    scroll-padding-top: 40px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .quemSomos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .a-gente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2px;
+    background-color: #f3f3f363;
+    text-align: center;
+    
+  }
+  
+  .sobreNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2px;
+    background-color: #f3f3f363;
+    text-align: center;
+    padding: 60px;
+  }
+  .descricaosobre {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 18px;
+  }
+
+  #principalSobre {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+/* FIM DO SOBRE */
+
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: darkgray;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bora{
+    margin-top: 5vh;
+    height: 40px;
+    width: 115px;
+}
+
+footer a{
+    margin-top: 2.5vh;
+    height: 1vh;
+    text-decoration: none;
+    font-size: 10pt;
+    color: darkgray;
+}
+
+#footerLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#links{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#copyright{
+    font-size: 8pt;
+}
+
+#redesSocias{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4vh;
+    width: 20vw;
+    height: 50px;
+
+}
+
+#redesSocias .image{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#redesSocias img{
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0;
+    border: 0;
+    width: 35px;
+}
+
+#links :hover{
+    text-decoration: underline;
+}
+
+#redesSocias img:hover{
+    background-color: gray;
+    border-radius: 50px;
+}
+
+#icons{
+    display: flex;
+}
+
+/* Tamanho Tablet */
+@media(max-width:768px){
+    body {
+        grid-template-areas: 
+        'header header'
+        'section section'
+        'footer footer';
+        grid-template-rows: 50vh 100vh 20vh;      
+        grid-template-columns: 49vw 51vw;   
+    }
+    
+    #logoMobile {
+        display: flow-root;
+    }
+    
+    .abrirMenu {
+        display: flex;
+        flex-direction: column;        
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+        transition: width 2s;
+        align-items: flex-end;
+        background-color: #00000061;
+        width: 100%;
+        padding: 10px;
+    }   
+    
+    .aparecerBotao {
+        display: flex !important;
+    }
+
+    #tituloInicial {
+        font-size: 44pt;
+    }
+    
+    .menuHamburguer {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .menuFixo {
+        padding: 0px;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    
+    header nav {
+        display: flex;
+        height: 20vh;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    #botaologin:hover {
+        font-size: 16px;
+    }
+
+    #cFunciona:hover {
+        font-size: 16px;
+    }
+
+    #contato:hover {
+        font-size: 16px;
+    }
+
+    #inscrever:hover {
+        font-size: 16px;
+    }
+
+    #sobre:hover {
+        font-size: 16px;
+    }
+    
+    #tamanho {
+        width: 100px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    #tamanhoBotao {
+        width: 50px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .a-gente{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f3f3f363;
+        text-align: center;
+        padding: 60px;
+      }
+
+
+    header nav ul li {
+        padding: 5px 0px 5px 0px;
+    }
+    
+    header nav ul li:nth-child(2),
+    header nav ul li:nth-child(3),
+    header nav ul li:nth-child(4),
+    header nav ul li:nth-child(5),
+    header nav ul li:nth-child(6) {
+        display: none;
+    }
+    
+    
+    header nav ul li img {
+        display: none;
+    }
+    
+    header main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+/* Tamanho Smartphone */
+@media(max-width:425px){
+    body{
+        grid-template-areas: 
+        'header header'
+        'section section'
+        'footer footer';
+        grid-template-rows: 50vh 120vh 20vh;    
+        grid-template-columns: 49vw 49.7vw;   
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #tituloInicial {
+        font-size: 26pt;
+    }
+
+    footer{
+        height: 60vh;
+    }
+    
+    #footerLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 40vh;
+    }
+    
+    #redesSocias p{
+        display: none;
+    }
+    
+}
+
+
