@@ -4,7 +4,7 @@ from django.db import models
 class Establishment(models.Model):
     es_name = models.CharField(max_length=255)
     es_icon = models.ImageField(upload_to='', null=True)    
-    es_rating = models.IntegerField(default=0, null=True)
+    es_rating = models.ImageField(upload_to='', null=True)    
     es_site =  models.CharField(max_length=100)
     es_phone = models.CharField(max_length=11)
     es_cnpj = models.CharField(max_length=14)
