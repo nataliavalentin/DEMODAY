@@ -10,12 +10,15 @@
     <div id="dashDados">
         <h2>Ei, {{ user.first_name }} {{ user.last_name }}!</h2>
         <h4>Aqui estão seus dados pessoais e interesses.</h4>  
-        <p>E-mail: {{ user.email }}</p>       
+        <p>E-mail: {{ user.email }}</p>    
+        <p>Celular: {{  profile.cellphone }}</p>    
+        <p>Data Nascimento: {{ profile.birthday }}</p>    
+         
         <h3>Interesses</h3>
-        <ul>           
-            <li>Musica</li>
-            <li>Tecnologia</li>
-            <li>Viagem</li>       
+        <ul>    
+            {% for interesse in interesses %}       
+            <li>{{ interesse }}</li>
+            {% endfor %}                 
         </ul>                  
     </div>
     <div id="dashLocalizacao">                

@@ -2,10 +2,13 @@
 {% load staticfiles %}
 
 {% block links %}
-<link rel="stylesheet" href="{% static 'css/options.css' %}"> 
+<link rel="stylesheet" href="{% static 'css/options.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
 {% endblock %}
 {% block scripts %}
 <script defer src="{% static 'js/options.js' %}"></script>
+<script defer src="{% static 'js/maps.js' %}"></script> 
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
 {% endblock %}
 {% block content %}
 <body>
@@ -29,9 +32,26 @@
                 <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
                 <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
             </article>
-            <button>Ver Sugestão</button>
+            <button class="botao">Ver Sugestão</button>
         </div>            
-        {% endfor %}       
+        {% endfor %} 
+        <div class="fundoPopup">
+                .
+            </div>
+        <article class="popup">
+            {% for item in lista %}
+                <div class="mapa">
+                        <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
+                        <article>
+                            <h3>{{ item.es_name }}</h3>
+                            <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
+                            <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+                        </article>
+                        <button class="voltar">Voltar</button>
+                </div>
+                <div  id="location-map"></div>
+            {% endfor %}
+        </article>
     </section>
 </body>
 {% endblock %}
