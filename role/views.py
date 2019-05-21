@@ -1,20 +1,25 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
 from role.forms import RoleForm, RoleGenreForm
+from user.forms import ProfileForm
+from user.models import Profile
 from role.models import Role
 from establishment.models import Establishment
 
 # Create your views here.
 @login_required
 def user_interests(request):
-    formulario = RoleGenreForm(request.POST or None)
+    formulario = RoleGenreForm(request.POST or None)    
     msg = ''
+
     if formulario.is_valid():
-        formulario.save()
-        formulario = RoleGenreForm()
+        #Logica para salvar interesses do usuario logado
+        #usr_logado = Profile.objects.filter(username=request.user.username).first()
+
         msg = 'Cadastro realizado com sucesso!'
-    
+        formulario = RoleGenreForm()
+        
     contexto = {
         'form' : formulario,
         'msg' : msg,

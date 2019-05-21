@@ -1,14 +1,13 @@
 body{
-    margin: 0;
+    margin: 0;  
 }
 
 section{
     display: flex;
     flex-flow: wrap;
-    background-color: snow;
+    /* background-color: snow; */
     justify-content: space-around;
 }
-
 
 section article{
     background-color: white;
