@@ -2,52 +2,52 @@
 {% load staticfiles %}
 
 {% block links %}
-    <link rel="stylesheet" href="{% static 'css/interests.css' %}"> 
+<link rel="stylesheet" href="{% static 'css/interests.css' %}"> 
 {% endblock %}
 {% block scripts %}
-    <script defer src="{% static 'js/interesses.js' %}"></script>
-    <script defer src="{% static 'js/saveInterests.js' %}"></script>
+<script defer src="{% static 'js/interesses.js' %}"></script>
+<script defer src="{% static 'js/saveInterests.js' %}"></script>
 {% endblock %}
 {% block content %}
-    <div class="fundoPopup">
-        .
-    </div>
-    <section>
-        <article class="popup">
-            <div class="logoColorido">
-                <img src="/static/images/interesses/logoColorido.png" alt="">
-            </div>
-            <p id="ana">Olá, {{ user.username }}!</p>
-            <div class="txtAna">
-                <p id="txtAna">Agora precisamos conhecer você melhor. Selecione algumas categorias de rolê para começar.</p>
-            </div>
-            <div class="botao">
-                <button>BORA</button>
-            </div>
-            <div class="botao2">
-                <a href="{% url 'home:index' %"}>
-                    <button>BORA</button>
-                </a>
-            </div>
+<div class="fundoPopup">
+    .
+</div>
+<section>
+    <article class="popup">
+        <div class="logoColorido">
+            <img src="/static/images/interesses/logoColorido.png" alt="">
         </div>
-    </article>
-        <form method='POST'>
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type='submit'>Cadastrar</button>
-            {% if msg %}
-                <h2>{{ msg }}</h2>
-            {% endif %}         
-        </form>
-        <!-- <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
-        
-        <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
-        <div class="fotografia" onclick="createRoleList(2);"><p>FOTOGRAFIA</p></div>
-        <div class="moda" onclick="createRoleList(3);"><p>MODA</p></div>
-        <div class="viagem" onclick="createRoleList(4);"><p>VIAGEM</p></div>
-        <div class="gastronomia" onclick="createRoleList(5);"><p>GASTRONOMIA</p></div>
-        <div class="diversao" onclick="createRoleList(6);"><p>DIVERSÃO</p></div>
-        <div class="tecnologia" onclick="createRoleList(7);"><p>TECNOLOGIA</p></div>
-        <div class="bonsDrinks" onclick="createRoleList(8);"><p>BONS DRINKS</p></div> -->
-    </section>
+        <p id="ana">Olá, {{ user.username }}!</p>
+        <div class="txtAna">
+            <p id="txtAna">Agora precisamos conhecer você melhor. Selecione algumas categorias de rolê para começar.</p>
+        </div>
+        <div class="botao">
+            <button>BORA</button>
+        </div>
+        <div class="botao2">
+            <a href="{% url 'home:index' %"}>
+                <button>BORA</button>
+            </a>
+        </div>
+    </div>
+</article>
+<form method='POST'>
+    {% if msg %}
+    <h2>{{ msg }}</h2>
+    {% endif %}  
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type='submit'>Cadastrar</button>                   
+</form>
+<!-- <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
+    
+    <div class="musica" onclick="createRoleList(1);"><p>MÚSICA</p></div>
+    <div class="fotografia" onclick="createRoleList(2);"><p>FOTOGRAFIA</p></div>
+    <div class="moda" onclick="createRoleList(3);"><p>MODA</p></div>
+    <div class="viagem" onclick="createRoleList(4);"><p>VIAGEM</p></div>
+    <div class="gastronomia" onclick="createRoleList(5);"><p>GASTRONOMIA</p></div>
+    <div class="diversao" onclick="createRoleList(6);"><p>DIVERSÃO</p></div>
+    <div class="tecnologia" onclick="createRoleList(7);"><p>TECNOLOGIA</p></div>
+    <div class="bonsDrinks" onclick="createRoleList(8);"><p>BONS DRINKS</p></div> -->
+</section>
 {% endblock %}

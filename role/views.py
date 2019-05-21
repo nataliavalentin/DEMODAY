@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
 from role.forms import RoleForm, RoleGenreForm
-from user.forms import ProfileForm
 from user.models import Profile
 from role.models import Role
 from establishment.models import Establishment

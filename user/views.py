@@ -5,14 +5,12 @@ from user.models import Profile
 from django.conf import settings
 from user.forms import RegisterForm
 from django.contrib.auth.decorators import login_required
-from role.models import TiposRole
 
 # Create your views here.
 @login_required
-def dashboard(request):
-    tipos_role = TiposRole.objects.all()
-    template_name = 'dashboard.html'
-    return render(request, template_name, {'tipos_role':tipos_role})
+def dashboard(request):    
+    template_name = 'dashboard.html' 
+    return render(request, template_name)
 
 def registerUser(request):
     template_name = 'reg.html'

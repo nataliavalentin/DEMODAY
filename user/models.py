@@ -8,15 +8,6 @@ class Profile(models.Model):
     cellphone = models.CharField(max_length=11)
     birthday = models.DateField(null=True)
 
-    tecnologia = models.BooleanField(default=False)
-    diversao = models.BooleanField(default=False)
-    fotografia = models.BooleanField(default=False)
-    gastronomia = models.BooleanField(default=False)
-    bons_drinks = models.BooleanField(default=False)
-    musica = models.BooleanField(default=False)
-    moda = models.BooleanField(default=False)
-    viagem = models.BooleanField(default=False)
-
     def __str__(self):
         return self.username
 

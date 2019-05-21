@@ -6,7 +6,8 @@
 {% block content %}
 <section>        
     <article id="container">  
-        <h3>Bora pra onde hoje?!</h3>   
+        <h3>Bora pra onde hoje?!</h3>  
+        {{ msg }} 
         <form method="post">
             {% csrf_token %}        
             {% for field in form %} 

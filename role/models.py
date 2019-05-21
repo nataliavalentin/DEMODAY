@@ -3,22 +3,6 @@ from establishment.models import Establishment
 from multiselectfield import MultiSelectField
 
 # Create your models here.
-class Role(models.Model):
-    opcoes_role = [
-        ('Música', 'Música'),
-        ('Tecnologia', 'Tecnologia'),
-        ('Gastronomia','Gastronomia'),
-        ('Fotografia', 'Fotografia'),
-        ('Moda', 'Moda'),
-        ('Bons Drinks', 'Bons Drinks'),
-        ('Viagem', 'viagem'),
-        ('Diversão', 'Diversão'),        
-    ]
-    local_role = models.ForeignKey(Establishment, on_delete=models.CASCADE)
-    tipos_role = models.CharField(max_length=50, choices=opcoes_role)
-    data_role = models.DateField()
-    horario_role = models.TimeField(auto_now = False, auto_now_add = False)
-
 class TiposRole(models.Model):
     role_genres = [
         ('1', 'Tecnologia'),
@@ -31,3 +15,10 @@ class TiposRole(models.Model):
         ('8', 'Viagem')
     ]
     choices = MultiSelectField(choices=role_genres)
+
+class Role(models.Model):
+    opcoes_role = TiposRole.role_genres
+    local_role = models.ForeignKey(Establishment, on_delete=models.CASCADE)
+    tipos_role = models.CharField(max_length=50, choices=opcoes_role)
+    data_role = models.DateField()
+    horario_role = models.TimeField(auto_now = False, auto_now_add = False)
