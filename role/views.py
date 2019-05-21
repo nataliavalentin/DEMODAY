@@ -8,7 +8,18 @@ from establishment.models import Establishment
 # Create your views here.
 @login_required
 def user_interests(request):
-    return render (request, 'interests.html')
+    formulario = RoleGenreForm(request.POST or None)
+    msg = ''
+    if formulario.is_valid():
+        formulario.save()
+        formulario = RoleGenreForm()
+        msg = 'Cadastro realizado com sucesso!'
+    
+    contexto = {
+        'form' : formulario,
+        'msg' : msg,
+    }
+    return render(request, 'interests.html', contexto)
 
 @login_required
 def user_options(request):
@@ -30,17 +41,3 @@ def user_roles(request):
         'msg':msg,
     }
     return render(request, "roles.html", context)
-
-def save_interests(request):
-    formulario = RoleGenreForm(request.POST or None)
-    msg = ''
-    if formulario.is_valid():
-        formulario.save()
-        formulario = RoleGenreForm()
-        msg = 'Cadastro realizado com sucesso!'
-    
-    contexto = {
-        'form' : formulario,
-        'msg' : msg,
-    }
-    return render(request, 'interests.html', contexto)

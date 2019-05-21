@@ -6,6 +6,8 @@ from multiselectfield import MultiSelectField
 class Role(models.Model):
     opcoes_role = [
         ('Música', 'Música'),
+        ('Tecnologia', 'Tecnologia'),
+        ('Gastronomia','Gastronomia'),
         ('Fotografia', 'Fotografia'),
         ('Moda', 'Moda'),
         ('Bons Drinks', 'Bons Drinks'),

@@ -17,3 +17,7 @@ class Establishment(models.Model):
 
     def __str__(self):
         return self.es_name
+
+    class Meta:
+        verbose_name = ('Estabelecimento')
+        verbose_name_plural = ('Estabelecimentos')

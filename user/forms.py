@@ -1,6 +1,7 @@
 from django import forms
 from user.models import User
 from django.contrib.auth.forms import UserCreationForm
+from user.models import Profile
 
 class RegisterForm(UserCreationForm):
     first_name = forms.CharField(label='Nome', max_length=255)
@@ -21,5 +22,16 @@ class RegisterForm(UserCreationForm):
             user.save()
         return user
 
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['username', 'cellphone', 'birthday',
+                  'tecnologia', 'diversao', 'fotografia', 'gastronomia', 
+                  'bons_drinks', 'musica', 'moda', 'viagem']
+
+    def __init__(self, *args, **kwargs):
+        super(ProfileForm, self).__init__(*args, **kwargs)
+        self.fields['cellphone'].label = "Celular"
+        self.fields['birthday'].label = "Data de Nascimento"
 
 
