@@ -9,7 +9,7 @@ body {
     'header header'
     'section section'
     'footer footer';
-    grid-template-rows: 0vh 80vh 30vh;
+    grid-template-rows: 0vh 120vh 30vh;
     grid-template-columns: 49vw 49.7vw;   
 }
 
@@ -25,6 +25,7 @@ body {
     width: 100%;
     height: auto;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+    z-index: 1000;
 }
 
 .botaoFixo {
@@ -148,12 +149,15 @@ header div nav article {
   }
   
   .titulo {
+    margin-top: 344px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
     font-weight: bold;
     text-align: center;
     font-size: 32px;
     letter-spacing: 13px;
     text-transform: uppercase;
-    padding: 30px;
   }
   
   .participe-texto {
@@ -178,8 +182,9 @@ header div nav article {
     margin-top: 2px;
     background-color: #f3f3f363;
     text-align: center;
-    
+    margin: 50px;    
   }
+
   
   .sobreNos{
     display: flex;
@@ -463,3 +468,4 @@ footer a{
 }
 
 
+}
