@@ -49,10 +49,6 @@ html {
     font-family: 'Raleway', sans-serif;	
 }	
 
- header div {	
-    padding: 0px 12px 0px 0px;	
-}	
-
  header .fa-bars {	
     color: white;	
 }	
@@ -94,8 +90,17 @@ html {
     display: flex;	
     flex-direction: column;	
     justify-content: center;	
-    align-items: center;	
-}	
+    align-items: center;
+    margin-bottom: auto;
+}
+
+#spaceInicial {
+    margin: 0;	
+    display: flex;	
+    flex-direction: column;	
+    justify-content: center;	
+    height: 25vh;
+}
 
  #botaologin:hover {	
     font-size: 18px;	
@@ -111,7 +116,11 @@ html {
 
  #inscrever:hover {	
     font-size: 20px;	
-}	
+}
+
+#navPrincipal {
+    width: 100%;
+}
 
  #sobre:hover {	
     font-size: 20px;	
