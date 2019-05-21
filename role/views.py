@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
 from role.forms import RoleForm, RoleGenreForm
 from user.models import Profile
-from role.models import Role
+from role.models import Role, UserInterests
 from establishment.models import Establishment
 
 # Create your views here.
@@ -13,9 +13,13 @@ def user_interests(request):
     msg = ''
 
     if formulario.is_valid():
-        #Logica para salvar interesses do usuario logado
-        #usr_logado = Profile.objects.filter(username=request.user.username).first()
-
+        #Logica para salvar interesses do usuario logado        
+        choices_list = formulario.cleaned_data['choices']
+        for choice in choices_list:
+            usr = UserInterests()
+            usr.tipos_role = choice
+            usr.profile = request.user
+            usr.save()
         msg = 'Cadastro realizado com sucesso!'
         formulario = RoleGenreForm()
         
