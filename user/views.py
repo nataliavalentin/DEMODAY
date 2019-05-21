@@ -5,12 +5,19 @@ from user.models import Profile
 from django.conf import settings
 from user.forms import RegisterForm
 from django.contrib.auth.decorators import login_required
+from role.models import UserInterests
 
 # Create your views here.
 @login_required
-def dashboard(request):    
+def dashboard(request):  
+    interesses = UserInterests.objects.filter(profile=request.user).all()  
+    usr_profile =  Profile.objects.filter(username=request.user).first()   
+    contexto = {
+        'interesses':interesses,
+        'profile':usr_profile
+    }
     template_name = 'dashboard.html' 
-    return render(request, template_name)
+    return render(request, template_name, contexto)
 
 def registerUser(request):
     template_name = 'reg.html'

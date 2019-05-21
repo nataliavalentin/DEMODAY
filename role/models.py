@@ -7,14 +7,14 @@ from django.conf import settings
 # Create your models here.
 class TiposRole(models.Model):
     role_genres = [
-        ('1', 'Tecnologia'),
-        ('2', 'Diversão'),
-        ('3', 'Fotografia'),
-        ('4', 'Gastronomia'),
-        ('5', 'Bons Drinks'),
-        ('6', 'Música'),
-        ('7', 'Moda'),
-        ('8', 'Viagem')
+        ('Tecnologia', 'Tecnologia'),
+        ('Diversão', 'Diversão'),
+        ('Fotografia', 'Fotografia'),
+        ('Gastronomia', 'Gastronomia'),
+        ('Bons Drinks', 'Bons Drinks'),
+        ('Música', 'Música'),
+        ('Moda', 'Moda'),
+        ('Viagem', 'Viagem')
     ]
     choices = MultiSelectField(choices=role_genres)
 
@@ -30,7 +30,7 @@ class UserInterests(models.Model):
     profile = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name='Usuario', related_name='user_interests', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.profile
+        return self.tipos_role
 
     class Meta:
         verbose_name = ('Interesse')
