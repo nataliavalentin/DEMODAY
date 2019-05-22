@@ -36,6 +36,12 @@ def user_options(request):
     return render (request, 'options.html', context)
 
 @login_required
+def map_option(request):
+    lista = Establishment.objects.all()
+    context = {'lista': lista}
+    return render (request, 'mapa.html', context)
+
+@login_required
 def user_roles(request):
     form = RoleForm(request.POST or None)
     msg = ''
