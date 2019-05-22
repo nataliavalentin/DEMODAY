@@ -16,7 +16,7 @@ botao.onclick = fecharPopup;
 function fecharPopup(){
     container.style.display = 'none';
     fundo.style.display = 'none';
-}
+}	
 
 tecnologia.style.background= 'url(/static/images/interesses/tecnologia.png)';
 tecnologia.style.display= 'flex';
@@ -48,7 +48,7 @@ bonsDrinks.style.display= 'flex';
 bonsDrinks.style.alignItems= 'center';
 bonsDrinks.style.justifyContent= 'center';
 
-musica.style.background= 'url(/static/images/interesses/musica.png)';
+musica.style.background= 'url(/static/images/interesses/musica.jpg)';
 musica.style.backgroundSize = ' cover';
 musica.style.display= 'flex';
 musica.style.alignItems= 'center';
