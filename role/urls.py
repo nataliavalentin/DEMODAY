@@ -8,4 +8,5 @@ urlpatterns = [
     path('interests/', views.user_interests, name='user_interests'),
     path('options/', views.user_options, name='user_options'),
     path('roles/', views.user_roles, name='user_roles'),
+    path('map/', views.map_option, name='map_option'),
 ]

@@ -34,7 +34,7 @@ def registerUser(request):
             #Autenticando usuário
             user = authenticate(username = request.POST['username'], password=form.cleaned_data['password1'])
             login(request, user)
-            return redirect(settings.LOGIN_REDIRECT_URL)
+            return redirect('role:user_interests')
     else:
         form = RegisterForm()
     context = {

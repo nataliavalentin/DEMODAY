@@ -1,3 +1,7 @@
+*{
+    margin:0;
+}
+
 body{
     margin: 0;  
 }
@@ -12,6 +16,15 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+h2{
+    text-align: center;
+    color: #ee3f60; 
+    margin: 0;
+    font-family: 'Segoe UI';
+    margin-top: 20px; 
 }
 
 section{
@@ -29,7 +42,7 @@ section article{
 
 section div{
     background-color: white;
-    width: 25%;
+    width: 50%;
     height: 283px; 
     display: flex;
 }
@@ -37,27 +50,7 @@ section div{
 section form {
     width: 100%; 
     height: 100%;  
-}
-
-section form {
-    width: 100%;   
-
-}
-
-#id_choices{
-    display: flex;
-    display: flex;
-    flex-flow: wrap;   
-    justify-content: space-around;
-    margin: 0;
-}
-
-section form ul li{
-    list-style-type: none;
-    width: 25%;
-    height: 200px; 
-    display: flex;
-    color: white;
+    background-color: black;
 }
 
 section form ul li:hover{ 
@@ -68,10 +61,36 @@ section form ul li label{
     font-size: 20pt;
 }
 
-:hover section div{
-    color: black;
+#id_choices{
+    display: flex;
+    display: flex;
+    flex-flow: wrap;   
+    justify-content: space-around;
+    margin: 0;
+    padding:0;
 }
 
+#btn-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#id_choices li{
+    list-style-type: none;
+    width: 25%;
+    height: 250px; 
+    display: flex;
+    color: white;
+    display:none;    
+}
+
+#id_choices input[type=checkbox] {
+    display:none;
+}
 
 .diversao{
     margin: 0px;
@@ -94,37 +113,6 @@ section form ul li label{
     display: flex;
 }
 
-.musica:hover{
-    opacity: 0.7;
-}
-
-.fotografia:hover{
-    opacity: 0.7;
-}
-
-.moda:hover{
-    opacity: 0.7;
-}
-
-.viagem:hover{
-    opacity: 0.7; 
-}
-
-.gastronomia:hover{
-    opacity: 0.7;
-}
-
-.diversao:hover{
-    opacity: 0.7;
-}
-
-.tecnologia:hover{
-    opacity: 0.7;
-}
-
-.bonsDrinks:hover{
-    opacity: 0.7;
-}
 
 /*fim das imagens, mores*/
 
@@ -152,13 +140,13 @@ section form ul li label{
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 #ana{
     color: #ee3f60; 
     margin: 0;
+    font-family: 'Segoe UI';
     padding-top: 10px;
 }
 
@@ -167,6 +155,7 @@ section form ul li label{
     font-size: 17px;
     font-family: 'Segoe UI';
     margin: 0;
+    text-align: center;
 }
 
 .txtAna{
@@ -186,20 +175,30 @@ section form ul li label{
 }
 
 section div img{
-    width: 250px;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
 }
 
-button{
-    width: 200px;
+#btnCadastrar{
+    width: 100%;
     height: 60px;
     font-size: 17pt;
-    border-radius: 50px;
     box-shadow: none;
     font-family:'Lalezar', cursive;
     color: antiquewhite;
+    background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
+}
+
+#btnPopup{
+    width: 100%;
+    height: 60px;
+    font-size: 17pt;
+    box-shadow: none;
+    font-family:'Lalezar', cursive;
+    color: antiquewhite;
+    border-radius: 50px;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
 }
 
@@ -222,29 +221,29 @@ button{
 /* Tamanho Tablet */
 @media(max-width:981px){
     section div{
-    width: 50%;
-    height: 283px; 
-    display: flex;
+        width: 50%;
+        height: 283px; 
+        display: flex;
     }
 }
 
 /* Tamanho Ipad Pro */
 @media(max-width:1024px){
     section div{
-    width: 50%;
-    height: 283px; 
-    display: flex;
+        width: 50%;
+        height: 283px; 
+        display: flex;
     }
 }
 
 /* Tamanho Iphone*/
 @media(max-width:545px){
     section div{
-    width: 100%;
-    height: 283px; 
-    display: flex;
+        width: 50%;
+        height: 283px; 
+        display: flex;
     }
-
+    
     .popup{
         position: fixed;
         border-radius: 25px;
@@ -257,11 +256,58 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        
     }
     .txtAna{
         width:300px;
-    }
+    }  
 }
 
+/* Tamanho Tablet */
+@media(max-width:768px){
+    #id_choices li{
+        width: 50%;
+        height: 242px; 
+    }
+    
+    section form ul li label {
+        font-size: 16pt;
+    }     
+}
 
+/* Tamanho Smartphone */
+@media(max-width:425px){   
+    #id_choices li{
+        width: 50%;
+        height: 162px; 
+    }
+    
+    section form ul li label {
+        font-size: 12pt;
+    }
+
+    #btnPopup{
+        width: 300px;
+        height: 60px;
+        font-size: 17pt;     
+    }
+
+    .popup{      
+        width: 80%;  
+        height: 296px;
+    }
+
+    .txtAna{
+        width: 100%;
+    }
+    
+    #txtAna {
+        font-size: 11pt;
+    }
+
+    .logoColorido img{
+        width: 90%;
+        height: 80px;
+        align-items: center;
+    }
+}
