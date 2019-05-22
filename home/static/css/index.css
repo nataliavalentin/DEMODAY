@@ -482,8 +482,7 @@ font-size: 8pt;
 
 
      header nav {	
-        display: flex;	
-        height: 25vh;	
+        display: flex;
         align-items: center;	
         justify-content: space-around;	
 
