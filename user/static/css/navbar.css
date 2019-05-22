@@ -32,3 +32,21 @@ nav div ul li a{
     color: white;
     text-decoration: none;
 }
+
+nav div ul {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav div {
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 425px) {
+    nav div {
+        align-items: center;
+        justify-content: space-around;
+    }
+}
