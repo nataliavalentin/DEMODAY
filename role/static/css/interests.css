@@ -53,10 +53,6 @@ section form {
     background-color: black;
 }
 
-section form ul li:hover{ 
-    opacity: 0.7;
-}
-
 section form ul li label{
     font-size: 20pt;
 }
@@ -113,10 +109,9 @@ section form ul li label{
     display: flex;
 }
 
-
-/*fim das imagens, mores*/
-
-/*aqui começa o pop-up, que Deus me ajude*/
+input[type=checkbox]:checked ~ .active {
+	background-color: red;
+}
 
 .fundoPopup{
     background-color: rgba(0, 0, 0, 0.63);
@@ -192,7 +187,7 @@ section div img{
 }
 
 #btnPopup{
-    width: 100%;
+    width: 200px;
     height: 60px;
     font-size: 17pt;
     box-shadow: none;
@@ -224,6 +219,9 @@ section div img{
         width: 50%;
         height: 283px; 
         display: flex;
+    }
+    #btnPopup{
+        width: 200px;
     }
 }
 
@@ -287,7 +285,7 @@ section div img{
     }
 
     #btnPopup{
-        width: 300px;
+        width: 200px;
         height: 60px;
         font-size: 17pt;     
     }
