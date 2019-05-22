@@ -17,23 +17,29 @@
             <p>Dá uma olhadinha nos rolês que estão acontecendo perto de você!</p>            
         </div>
         <div class="txt2">                
-            <img src="{% static '/images/sugestoes/place.png' %}" alt="">
-            <article>
+            <span>
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <div>
                 <h3>Sua localização agora:</h3>
                 <p>Estação Hack - Trianon Masp</p>
-            </article>             
+            </div>
         </div>
+    </section>
+    <aside>
         {% for item in lista %}
         <div class="paulista">
-            <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
             <article>
+                <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
                 <h3>{{ item.es_name }}</h3>
                 <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
                 <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+                <a href="{% url 'role:map_option' %}"><button class="botao">Ver Sugestão</button></a>
             </article>
-            <a href="{% url 'role:map_option' %}"><button class="botao">Ver Sugestão</button></a>
         </div>            
         {% endfor %} 
-    </section>
+    </aside>
+
+    
 </body>
 {% endblock %}

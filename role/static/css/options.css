@@ -1,5 +1,11 @@
-body{
+body {
     margin: 0;
+    display: grid;
+    grid-template-areas: 'header'
+                        'section'	
+                        'aside';
+    grid-template-rows: 10vh 35vh 50vh;
+    grid-template-columns: 100vw;
 }
 
 body{
@@ -7,19 +13,77 @@ body{
 }
 
 section{
+    grid-area: section;
     display: flex;
-    flex-flow: wrap;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-around;
-    margin: 20px;
+    color: white;
+    font-family: 'Raleway';
+    text-align: center;
 }
 
+h3 {
+    font-size: 25pt;
+}
+p {
+    font-size: 16pt;
+}
+
+span {
+    font-size: 75pt;
+    color: #ee3f60;
+    padding: 0px 15px 0px 0px;
+}
+
+.txt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: #b9b6b675;
+    border-radius: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+article img {
+    width: 120px;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color:white;
+    background-color: #ee3f60;
+}
+
+.paulista {
+    margin: 10px;
+}
+
+.paulista article a {
+    padding: 15px 0px 0px 0px;
+}
+
+/* 
 .txt1, .txt2, .paulista, .masp, .casaDasRosas, .feimi, .charme, .feiraGastronomica{
-    width: 45%;
-    height: 150px;
     background-color: #57585b;
-    margin: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -60,14 +124,7 @@ article p{
     height: 110px;
 }
 
-button{
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    color:white;
-    background-color: #ee3f60;
-}
+
 
 .charme{
     display: flex;
@@ -83,12 +140,7 @@ button{
 }
 
 .txt1{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Segoe UI';
-    align-items: flex-start;
-    justify-content: center;
+    text-align: center;
 }
 
 .txt1 p{
@@ -122,7 +174,7 @@ button{
 
 .txt2 article{
     height: 40px;
-}
+} */
 
 .popup{
  display: flex;
@@ -156,6 +208,38 @@ button{
 }
 
 @media(max-width:545px){
+    
+    body {
+        grid-template-rows: 40vh 90vh 100vh;
+    }
+
+    #nav-logado div img {
+        width: 74px;
+        margin-left: 0px;
+    }
+
+    #nav-logado {
+        flex-direction: column;
+        height: 30vh;
+    }
+
+    #nav-logado ul {
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside {
+        flex-direction: column;
+    }
+    
     .popup{
         flex-direction: column-reverse;
         align-items: center;
@@ -165,4 +249,21 @@ button{
         width: 100%;
         border-radius: none;
     }    
+    
+    .txt2 {
+        flex-direction: column;
+    }
+
+    .txt2 h3 {
+        font-size: 16pt;
+    }
+
+    span {
+        padding: 0px;
+        font-size: 45pt;
+    }
+    
+    p {
+        font-size: 12pt;
+    }
 }
