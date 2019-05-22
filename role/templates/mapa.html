@@ -16,12 +16,14 @@
     </div> -->
     <article class="popup">
         <div class="mapa">
-            <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
-            <article>
-                <h3>Paulista Burger</h3>
-                <p>Av. Paulista, 1499 - Consolação, São Paulo - SP</p>
-                <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-            </article>
+            <div>
+                <img id="img" src="{% static '/images/sugestoes/paulistaBurger.png' %}{{ item.es_icon }}" alt="">
+                <article>
+                    <h3>Paulista Burger</h3>
+                    <p>Av. Paulista, 1499 - Consolação, São Paulo - SP</p>
+                    <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+                </article>
+            </div>           
             <a href="{% url 'role:user_options' %}">
                 <button id="btnPopup">Voltar</button>
             </a>
