@@ -113,10 +113,6 @@ input[type=checkbox]:checked ~ .active {
 	background-color: red;
 }
 
-/*fim das imagens, mores*/
-
-/*aqui começa o pop-up, que Deus me ajude*/
-
 .fundoPopup{
     background-color: rgba(0, 0, 0, 0.63);
     position: fixed;
