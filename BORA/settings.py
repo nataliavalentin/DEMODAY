@@ -26,9 +26,7 @@ SECRET_KEY = '$7*9)5_wz#n5$931z!du!+896dz@gu(dv*=ss-)f7dzsp%q4i_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['bora-projeto.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,11 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #Upload de Arquivos
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
