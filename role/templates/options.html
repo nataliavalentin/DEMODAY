@@ -36,20 +36,22 @@
         </div>            
         {% endfor %} 
         <div class="fundoPopup">
-                .
-            </div>
+            .
+        </div>
         <article class="popup">
             {% for item in lista %}
-                <div class="mapa">
-                        <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
-                        <article>
-                            <h3>{{ item.es_name }}</h3>
-                            <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
-                            <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
-                        </article>
-                        <button class="voltar">Voltar</button>
-                </div>
-                <div  id="location-map"></div>
+            {% if item.es_name == 'Paulista Burger' %}
+            <div class="mapa">
+                <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
+                <article>
+                    <h3>{{ item.es_name }}</h3>
+                    <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
+                    <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">
+                </article>
+                <button class="voltar">Voltar</button>
+            </div>
+            <div  id="location-map"></div>
+            {% endif %}               
             {% endfor %}
         </article>
     </section>
