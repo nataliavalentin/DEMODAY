@@ -155,6 +155,12 @@ button{
     align-items: center;
 }
 
+@media(max-width:768px){
+    .txt1, .txt2, .paulista, .masp, .casaDasRosas, .feimi, .charme, .feiraGastronomica{
+        width: 85%;  
+    }
+}
+
 @media(max-width:545px){
     .popup{
         flex-direction: column-reverse;
