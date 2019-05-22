@@ -53,10 +53,6 @@ section form {
     background-color: black;
 }
 
-section form ul li:hover{ 
-    opacity: 0.7;
-}
-
 section form ul li label{
     font-size: 20pt;
 }
@@ -113,6 +109,9 @@ section form ul li label{
     display: flex;
 }
 
+input[type=checkbox]:checked ~ .active {
+	background-color: red;
+}
 
 /*fim das imagens, mores*/
 
