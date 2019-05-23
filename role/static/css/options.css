@@ -118,7 +118,7 @@ button{
 @media(max-width:922px) {
 
     body {
-        grid-template-rows: 10vh 60vh 120vh;
+        grid-template-rows: 25vh 60vh 120vh;
     }
 
     section {
