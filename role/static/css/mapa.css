@@ -1,8 +1,9 @@
 body{
     background-color: black;
 }
+
 .mapa {
-    grid-area: aside;
+    grid-area: 'aside';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +14,7 @@ body{
     border-radius: 15px;
     align-items: center;
     font-family: 'Raleway';
- 
+    text-align: center;
 }
 
 button{
@@ -75,6 +76,9 @@ button{
     
     #img, #stars{
         width: 80px;
+    }
+    .mapa {
+        width: 72vw;
     }
 }
 
