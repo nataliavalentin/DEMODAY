@@ -36,14 +36,12 @@ section{
 section article{
     background-color: white;
     width: 25%;
-    height: 283px; 
     display: flex;
 }
 
 section div{
     background-color: white;
     width: 50%;
-    height: 283px; 
     display: flex;
 }
 
@@ -155,7 +153,6 @@ input[type=checkbox]:checked ~ .active {
 
 .txtAna{
     width: 380px;
-    height: 100px;
     margin: 0;
 }
 
@@ -217,7 +214,6 @@ section div img{
 @media(max-width:981px){
     section div{
         width: 50%;
-        height: 283px; 
         display: flex;
     }
     #btnPopup{
@@ -229,7 +225,6 @@ section div img{
 @media(max-width:1024px){
     section div{
         width: 50%;
-        height: 283px; 
         display: flex;
     }
 }
@@ -238,7 +233,6 @@ section div img{
 @media(max-width:545px){
     section div{
         width: 50%;
-        height: 283px; 
         display: flex;
     }
     
