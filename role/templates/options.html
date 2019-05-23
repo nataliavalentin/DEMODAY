@@ -30,7 +30,7 @@
         {% for item in lista %}
         <div class="paulista">
             <article>
-                <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
+                <img id="img" src="/media/{{ item.es_icon }}" alt="">
                 <h3>{{ item.es_name }}</h3>
                 <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
                 <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">

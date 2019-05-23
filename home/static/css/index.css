@@ -442,7 +442,9 @@ font-size: 8pt;
     }	
 
      #logoMobile {	
-        display: flow-root;	
+        display: flex;
+        width: 116px;
+        height: 40px;
     }	
 
      .abrirMenu {	
