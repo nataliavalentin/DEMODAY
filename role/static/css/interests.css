@@ -166,7 +166,6 @@ input[type=checkbox]:checked ~ .active {
 .logoColorido{
     width: 250px;
     height: 100px;
-    padding-top: 10px;
 }
 
 section div img{
