@@ -115,6 +115,41 @@ button{
     align-items: center;
 }
 
+@media(max-width:922px) {
+
+    body {
+        grid-template-rows: 10vh 60vh 120vh;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #location-map {
+        width: 100%;
+        border-radius: none;
+    }    
+    
+    .txt2 {
+        flex-direction: column;
+    }
+
+    .txt2 h3 {
+        font-size: 16pt;
+    }
+
+    span {
+        padding: 0px;
+        font-size: 45pt;
+    }
+    
+    p {
+        font-size: 12pt;
+    }
+}
+
+
 @media(max-width:545px){
     
     body {
