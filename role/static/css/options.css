@@ -48,7 +48,7 @@ aside {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 article {
@@ -119,6 +119,10 @@ button{
 
     body {
         grid-template-rows: 10vh 60vh 120vh;
+    }
+
+    aside {
+        flex-wrap: nowrap;
     }
 
     section {
