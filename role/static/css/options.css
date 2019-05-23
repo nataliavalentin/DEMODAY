@@ -121,10 +121,6 @@ button{
         grid-template-rows: 10vh 60vh 120vh;
     }
 
-    aside {
-        flex-wrap: nowrap;
-    }
-
     section {
         flex-direction: column;
         align-items: center;
@@ -185,7 +181,7 @@ button{
 
     aside {
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     .popup{
