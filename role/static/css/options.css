@@ -1,67 +1,114 @@
-body {
+* {
     margin: 0;
-    display: grid;
-    grid-template-areas: 'header'
-                        'section'	
-                        'aside';
-    grid-template-rows: 10vh 35vh 50vh;
-    grid-template-columns: 100vw;
 }
 
-body{
+body {
+    margin: 0;
     background-color: #2d2f33;
 }
 
+/* Section com Texto do Usuário e Localização*/
+
 section{
-    grid-area: section;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     color: white;
     font-family: 'Raleway';
     text-align: center;
+   
+    height: 50vh;
 }
 
-h3 {
+section div:nth-child(1){
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section div:nth-child(1) h3{
+    margin: 0 0 5px 0;  
     font-size: 25pt;
 }
-p {
-    font-size: 16pt;
+
+section div:nth-child(1) p{
+    margin:0;
+    font-size:12pt;
+    width: 82%;
 }
 
-span {
-    font-size: 75pt;
-    color: #ee3f60;
-    padding: 0px 15px 0px 0px;
-}
-
-.txt2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-aside {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-article {
-    grid-area: aside;
+section div:nth-child(2){
+    width: 59%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    width: auto;
-    background-color: #b9b6b675;
-    border-radius: 15px;
-    padding: 15px;
     align-items: center;
+    justify-content: center;
 }
 
-article img {
-    width: 120px;
+section div:nth-child(2) span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 100%;
+}
+section div:nth-child(2) span:nth-child(1) i{
+    font-size: 55px;
+    color: #ee3f60;
+}
+
+section div:nth-child(2) div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+section div:nth-child(2) span h3{
+    margin:0;
+    font-size: 20pt;
+}
+
+/* Fim da Section*/
+/* ASIDE - Conteudo Principal com DIV dos Rolês*/
+
+article {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.conteudo{
+    width: 60vw;
+    height: 60vh;
+    background-color: #b9b6b675;
+    margin:5px;
+    border-radius: 20px;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+img {
+    width: 110px;
+}
+
+article .conteudo h3{
+    margin:2px 0 2px 0;
+}
+
+article .conteudo p{
+    margin: 0;
 }
 
 button{
@@ -73,115 +120,14 @@ button{
     background-color: #ee3f60;
 }
 
-.paulista {
-    margin: 10px;
-}
-
-.paulista article a {
-    padding: 15px 0px 0px 0px;
-}
-
-/* 
-.txt1, .txt2, .paulista, .masp, .casaDasRosas, .feimi, .charme, .feiraGastronomica{
-    background-color: #57585b;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-#stars{
-    width:110px;
-}
-
-section div:first-child, div:nth-child(2){
-    background-color: #2d2f33
-}
-
-#paulistaImg{
-    width: 110px;
-    height: 110px;
-}
-
-.paulista{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-article{
-    font-family: 'Segoe UI';
-    color: white;
-    height: 130px;
-}
-
-article p{
-    font-size: 10pt;
-}
-
-#img{
-    width: 110px;
-    height: 110px;
-}
-
-
-
-.charme{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.feiraGastronomica{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.txt1{
-    text-align: center;
-}
-
-.txt1 p{
-    margin: 0;
-}
-
-.txt1 h3{
-    margin: 0;
-}
-
-.txt2{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-family: 'Segoe UI';
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.txt2 img{
-    padding-right: 10px;
-}
-
-.txt2 p{
-    margin: 0;
-}
-
-.txt2 h3{
-    margin: 0;
-}
-
-.txt2 article{
-    height: 40px;
-} */
-
+/* Fim ASIDE*/
+/* MAPA */
 .popup{
- display: flex;
- justify-content: space-around;
- align-items: flex-start;
- height: 100%;
- width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
 }
 
 #location-map{
@@ -198,7 +144,7 @@ article p{
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-  }
+}
 
 .mapa{
     display: flex;
@@ -206,23 +152,58 @@ article p{
     justify-content: flex-start;
     align-items: center;
 }
+/* FIM MAPA */
+
+/* Tamanho Tablet */
+@media(max-width:768px){ 
+    .conteudo{
+        width: 90vw;
+        height: 60vh;     
+    }
+}
 
 @media(max-width:545px){
     
     body {
         grid-template-rows: 40vh 90vh 100vh;
     }
+     
+    section{
+        flex-direction: column;        
+        height: 70vh;
+    }
+    
+    section div:nth-child(1){
+        height: 50%;
+    }
+    
+    section div:nth-child(1) p{
+        width: 100%;
+    }
+    
+    section span:nth-child(2){
+        height: 30%;
+    }
+    
+    .conteudo{
+        width: 90vw;
+        height: 60vh;     
+    }
 
+    .conteudo p{
+        font-size: 10pt;
+    }
+    
     #nav-logado div img {
         width: 74px;
         margin-left: 0px;
     }
-
+    
     #nav-logado {
         flex-direction: column;
         height: 30vh;
     }
-
+    
     #nav-logado ul {
         margin: 0px;
         padding: 0px;
@@ -230,12 +211,6 @@ article p{
         align-items: flex-end;
     }
     
-    section {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     aside {
         flex-direction: column;
     }
@@ -244,20 +219,21 @@ article p{
         flex-direction: column-reverse;
         align-items: center;
     }
-
+    
     #location-map{
         width: 100%;
         border-radius: none;
     }    
     
-    .txt2 {
+    #localizacao {
+        display: flex;
         flex-direction: column;
     }
-
-    .txt2 h3 {
+    
+    #localizacao h3 {
         font-size: 16pt;
     }
-
+    
     span {
         padding: 0px;
         font-size: 45pt;
@@ -265,5 +241,25 @@ article p{
     
     p {
         font-size: 12pt;
+    }
+}
+
+
+/* Tamanho Smartphone */
+@media(max-width:425px){
+    section div:nth-child(1){
+        width: 100%;
+    }
+
+    section div:nth-child(2) {
+        width: 100%;
+    }
+
+    section div:nth-child(2) span{
+        width: 100%;
+    }
+
+    section div:nth-child(2) span h3{
+        font-size: 16pt;
     }
 }

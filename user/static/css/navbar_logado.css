@@ -3,7 +3,7 @@ body{
 }
 
 #nav-logado{
-    height: 10vh;
+    height: 25vh;
     width: 100%;
     background-image: linear-gradient(to right, #ee3f60 0%, #ee3f60 46%, #f26e57  100%);
     display: flex;
@@ -42,12 +42,30 @@ body{
     text-decoration: none;
 }
 
+.mostrarUl {
+    display: none !important;
+}
 /* Tamanho Tablet */
 @media(max-width:768px){ 
+    #nav-logado div img {
+        width: 74px;
+        margin-left: 0px;
+    }
 
+    #nav-logado {
+        flex-direction: column;
+        height: 30vh;
+    }
+
+    #nav-logado ul {
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 /* Tamanho Smartphone */
 @media(max-width:425px){
-  
+
 }

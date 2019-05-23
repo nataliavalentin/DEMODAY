@@ -1,3 +1,4 @@
+  
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bora!</title>
     <link rel="stylesheet" href="{% static 'css/navbar_logado.css' %}">
+    <script src=" {% static 'js/nav.js'%}" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <link rel="shortcut icon" href="{% static '/images/logo/borafaviconf.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -16,10 +18,10 @@
 </head>
 <body>
     <nav id = "nav-logado"> 
-        <div>
+        <div class="menu">
             <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">   
         </div>       
-        <ul>         
+        <ul id="navbar">         
             {% if user.is_authenticated %}    
             <li>Olá, {{ user.username }}!</li>           
             <li><a href="{% url 'user:dashboard' %}">Perfil</a></li>
