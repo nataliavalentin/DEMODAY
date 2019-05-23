@@ -20,7 +20,7 @@
         <div class="menu">
             <img src="{% static '/images/logo/bora.png' %}" alt="Logo Bora!">   
         </div>       
-        <ul>         
+        <ul id="navbar">         
             {% if user.is_authenticated %}    
             <li>Olá, {{ user.username }}!</li>           
             <li><a href="{% url 'user:dashboard' %}">Perfil</a></li>

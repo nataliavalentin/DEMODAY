@@ -42,24 +42,15 @@ body{
     text-decoration: none;
 }
 
+.mostrarUl {
+    display: none !important;
+}
 /* Tamanho Tablet */
 @media(max-width:768px){ 
-    #nav-logado ul {
-        display: none;
-    }
-    
-    .mostrarUl {
-        display: flex !important;
-    }
+
 }
 
 /* Tamanho Smartphone */
 @media(max-width:425px){
-    #nav-logado ul {
-        display: none;
-    }
-    
-    .mostrarUl {
-        display: flex !important;
-    }
+
 }
