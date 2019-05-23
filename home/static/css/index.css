@@ -442,7 +442,9 @@ font-size: 8pt;
     }	
 
      #logoMobile {	
-        display: flow-root;	
+        display: flex;
+        width: 116px;
+        height: 40px;
     }	
 
      .abrirMenu {	
@@ -617,8 +619,6 @@ font-size: 8pt;
     }	
 
  }	
-
-
 
  /* Tamanho Smartphone */	
 @media(max-width:425px){	

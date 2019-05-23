@@ -52,7 +52,6 @@ button{
     margin: 0;
 }
 
-
 /* Tamanho Tablet */
 @media(max-width:768px){
     .popup{
@@ -86,6 +85,4 @@ button{
         margin: 0;
         border-radius: none;
     }    
-    
-  
 }
