@@ -26,7 +26,7 @@
 <article>       
     {% for item in lista %}            
     <div class='conteudo'>      
-        <img id="img" src="{% static '/images/sugestoes/' %}{{ item.es_icon }}" alt="">
+        <span><i class="fas fa-map-marked-alt"></i></span>
         <h3>{{ item.es_name }}</h3>
         <p>{{ item.es_street }}, {{ item.es_number }} - {{ item.es_district }}, {{ item.es_city }} - {{ item.es_state }}</p>
         <img id="stars" src="{% static '/images/sugestoes/estrelas.png' %}" alt="">

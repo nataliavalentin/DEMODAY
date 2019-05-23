@@ -75,6 +75,13 @@ section div:nth-child(2) span h3{
     font-size: 20pt;
 }
 
+
+.conteudo span i {
+    font-size: 65pt;
+    padding: 0px;
+    color: azure;
+}
+
 /* Fim da Section*/
 /* ASIDE - Conteudo Principal com DIV dos Rolês*/
 
@@ -118,6 +125,7 @@ button{
     border: none;
     color:white;
     background-color: #ee3f60;
+    font-family: 'Raleway';
 }
 
 /* Fim ASIDE*/
