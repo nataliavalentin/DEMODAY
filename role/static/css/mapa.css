@@ -2,6 +2,10 @@ body{
     background-color: black;
 }
 
+#nav-logado {
+    height: 10vh;
+}
+
 .mapa {
     grid-area: aside;
     grid-area: 'aside';
@@ -15,7 +19,7 @@ body{
     border-radius: 15px;
     align-items: center;
     font-family: 'Raleway';
-
+    margin: 20px;
     text-align: center;
 }
 
@@ -34,6 +38,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 90vh;
 }
 #location-map{
     position: relative;
@@ -57,13 +62,11 @@ button{
         flex-direction: column;
     }
 }
-/* .mapa{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-} */
 @media(max-width:922px) {
+    #nav-logado {
+        height: 25vh;
+    }
+
     #location-map {
         width: 72%;
         margin: 0;
