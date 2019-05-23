@@ -153,7 +153,7 @@ button{
 @media(max-width:545px){
     
     body {
-        grid-template-rows: 40vh 90vh 290vh;
+        grid-template-rows: 40vh 90vh 340vh;
     }
 
     #nav-logado div img {
